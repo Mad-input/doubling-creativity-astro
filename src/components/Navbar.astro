@@ -1,0 +1,102 @@
+---
+import Logo from "../icons/Logo.astro";
+---
+
+<nav class="navbar">
+  <ul class="list-navbar">
+    <li class="list-item"><a href="#">Home</a></li>
+    <li class="list-item"><a href="#">Courses</a></li>
+    <li class="list-item"><Logo /></li>
+    <li class="list-item"><a href="#">About Us</a></li>
+    <li class="list-item"><a href="#">Articles</a></li>
+  </ul>
+  <div class="buttons-s-i">
+    <button class="btn s">Sing Up</button>
+    <button class="btn i">Log In</button>
+  </div>
+</nav>
+
+<style>
+  .navbar {
+    display: flex;
+    padding: 10px 30px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    animation: blur 1s ease-in-out;
+    animation-timeline: scroll(root);
+    z-index: 1000;
+
+    .list-navbar {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      .list-item {
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+        svg {
+          width: fit-content;
+          height: 100px;
+          animation: fade-in 1s ease-in-out;
+          transition: 0.3s ease;
+        }
+      }
+    }
+
+    .buttons-s-i {
+      .btn {
+        border: none;
+        background: none;
+        outline: none;
+        color: currentColor;
+        cursor: pointer;
+        color: #fff;
+        padding: 5px 15px;
+        border-radius: 8px;
+      }
+
+      & .s {
+        background: #1a1ae5;
+      }
+      & .i {
+        background: #242447;
+      }
+    }
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(-40px);
+    }
+  }
+
+  @keyframes blur {
+    to {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(20px);
+    }
+  }
+</style>
+
+<script>
+  window.addEventListener("scrollend", onScroll);
+
+  function onScroll() {
+    const el = document.querySelector(".list-item  svg") as HTMLElement;
+    const posicion = el.getBoundingClientRect().top;
+
+    if (posicion < window.innerHeight) {
+      el.style.height = "50px";
+    }
+    if (window.scrollY === 0) {
+      el.style.height = "100px";
+    }
+  }
+  onScroll();
+</script>
