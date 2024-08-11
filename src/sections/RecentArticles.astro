@@ -1,0 +1,27 @@
+---
+import Article from "../components/Article.astro";
+import { articles } from "../mock/artcles-main.json";
+---
+
+<section class="resent-articles">
+  {
+    articles.map((article) => (
+      <Article
+        title={article.title}
+        description={article.description}
+        url={article.url}
+        urlImage={article.idImg}
+      />
+    ))
+  }
+</section>
+
+<style>
+  .resent-articles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-block: var(--margin-between);
+  }
+</style>

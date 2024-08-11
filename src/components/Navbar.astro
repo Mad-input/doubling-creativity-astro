@@ -4,7 +4,7 @@ import Logo from "../icons/Logo.astro";
 
 <nav class="navbar">
   <ul class="list-navbar">
-    <li class="list-item"><a href="#">Home</a></li>
+    <li class="list-item"><a href="/">Home</a></li>
     <li class="list-item"><a href="#">Courses</a></li>
     <li class="list-item"><Logo /></li>
     <li class="list-item"><a href="#">About Us</a></li>
@@ -35,6 +35,22 @@ import Logo from "../icons/Logo.astro";
       gap: 30px;
       .list-item {
         list-style: none;
+        position: relative;
+        &:not(:has(svg))::after {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          height: 2px;
+          background: #fff;
+          width: 0;
+          right: 0;
+          bottom: 0;
+          transition: width 0.3s ease-in-out;
+        }
+        &:not(:has(svg)):hover::after {
+          width: 100%;
+          left: 0;
+        }
         a {
           text-decoration: none;
           color: white;
@@ -61,10 +77,10 @@ import Logo from "../icons/Logo.astro";
       }
 
       & .s {
-        background: #1a1ae5;
+        background: var(--color-a);
       }
       & .i {
-        background: #242447;
+        background: var(--color-b);
       }
     }
   }

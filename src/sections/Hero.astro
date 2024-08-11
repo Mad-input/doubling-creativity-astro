@@ -1,10 +1,6 @@
----
-import TitleMain from "../components/TitleMain.astro";
----
-
 <section class="hero-main">
   <div class="content">
-    <TitleMain server:defer />
+    <h1 class="hero-title" id="title">Develop your creativity</h1>
     <p class="hero-text">
       Discover a new world through art. Explore courses and tutorials on line of
       the best artists and experts.
@@ -21,7 +17,7 @@ import TitleMain from "../components/TitleMain.astro";
     justify-content: space-between;
     align-items: center;
     gap: 100px;
-    margin-block: 100px;
+    margin-block: var(--margin-between);
 
     .content {
       color: #fff;

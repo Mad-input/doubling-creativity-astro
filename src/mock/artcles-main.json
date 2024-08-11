@@ -1,0 +1,22 @@
+{
+  "articles": [
+    {
+      "title": "El debate central en el cristianismo: Jesús, ¿Hijo de Dios o Dios?",
+      "description": "La cuestión de si Jesús es Dios o el Hijo de Dios es uno de los temas más profundos y debatidos en la teología cristiana.",
+      "idImg": "https://i0.wp.com/vaventura.com/wp-content/uploads/2024/08/AdobeStock_276162443_edit4.jpg?resize=560%2C420&ssl=1",
+      "url": "https://vaventura.com/divulgacion/religion/jesus-dios"
+    },
+    {
+      "title": "Top 10 compositores soviéticos",
+      "description": "Por alguna extraña razón, en un breve espacio de tiempo (1870-1940) y en una zona geográfica bastante concreta (el oeste del Imperio Ruso/Unión Soviética).",
+      "idImg": "https://i2.wp.com/vaventura.com/wp-content/uploads/2023/08/Captura-de-pantalla-2023-08-31-a-las-13.29.02.png?resize=560%2C747&ssl=1",
+      "url": "https://vaventura.com/cultura/musica/compositores-sovieticos"
+    },
+    {
+      "title": "La muerte de Rafael",
+      "description": "Entre las altas cumbres de los Apeninos y la calurosa costa del Adriático se levanta la villa milenaria de Urbino.",
+      "idImg": "https://i2.wp.com/vaventura.com/wp-content/uploads/2018/06/RAFAEL-DOS-CABEZAS-DE-APOSTOLES.jpg?resize=560%2C420&ssl=1",
+      "url": "https://vaventura.com/cultura/arte/la-muerte-rafael"
+    }
+  ]
+}

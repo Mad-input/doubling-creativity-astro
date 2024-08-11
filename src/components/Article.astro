@@ -1,0 +1,50 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  url: string;
+  urlImage: string;
+}
+
+const { title, description, url, urlImage } = Astro.props;
+---
+
+<article class="article-main" style=`--bg: url(${urlImage});`>
+  <a
+    class="image-container-article"
+    href={url}
+    target="_blank"
+    rel="noopener noreferer"><span>{title}</span></a
+  >
+</article>
+
+<style>
+  .article-main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    color: #fff;
+    transition: scale 0.5s;
+
+    &:hover {
+      scale: 1.1;
+    }
+
+    .image-container-article {
+      width: 300px;
+      height: 400px;
+      background:
+        linear-gradient(to top, rgba(0, 0, 0, 0.6) 70%, transparent),
+        var(--bg) center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+  }
+</style>
