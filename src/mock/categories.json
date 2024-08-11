@@ -1,0 +1,29 @@
+{
+  "categories": [
+    {
+      "title": "Oil painting",
+      "IdImage": "oil-painting",
+      "description": "Explore the rich textures and vibrant colors of oil painting, perfect for creating timeless masterpieces."
+    },
+    {
+      "title": "Mosaics",
+      "IdImage": "mosaics",
+      "description": "Discover the intricate art of mosaics, combining tiny pieces of glass or stone to form stunning designs."
+    },
+    {
+      "title": "Art of light",
+      "IdImage": "art-of-light",
+      "description": "Delve into the mesmerizing world of light art, where illumination and shadows create captivating visual effects."
+    },
+    {
+      "title": "Watercolor",
+      "IdImage": "watercolor",
+      "description": "Learn the delicate techniques of watercolor painting, where soft hues and fluid brushstrokes capture the essence of your subject."
+    },
+    {
+      "title": "Guitar",
+      "IdImage": "guitar",
+      "description": "Master the art of guitar playing, from classical to contemporary, and express your creativity through music."
+    }
+  ]
+}
