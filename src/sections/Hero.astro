@@ -1,0 +1,54 @@
+---
+import TitleMain from "../components/TitleMain.astro";
+---
+
+<section class="hero-main">
+  <div class="content">
+    <TitleMain server:defer />
+    <p class="hero-text">
+      Discover a new world through art. Explore courses and tutorials on line of
+      the best artists and experts.
+    </p>
+  </div>
+  <div class="image-container">
+    <img src="/img/image-main-1.svg" alt="art wordl skills" />
+  </div>
+</section>
+
+<style>
+  .hero-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    margin-block: 100px;
+
+    .content {
+      color: #fff;
+      .hero-title {
+        font-size: 90px;
+      }
+
+      .hero-text {
+        text-wrap: pretty;
+        color: #9494c7;
+      }
+    }
+
+    .image-container {
+      img {
+        width: 600px;
+        animation: translate 2s linear alternate infinite;
+      }
+    }
+  }
+
+  @keyframes translate {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(30px);
+    }
+  }
+</style>

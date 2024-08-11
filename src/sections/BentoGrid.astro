@@ -1,0 +1,26 @@
+---
+import BentoItem from "../components/BentoItem.astro";
+import { categories } from "../mock/categories.json";
+---
+
+<section class="bento-grid">
+  {
+    categories.map((category) => (
+      <BentoItem
+        title={category.title}
+        description={category.description}
+        idImage={category.IdImage}
+      />
+    ))
+  }
+</section>
+
+<style>
+  .bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    gap: 30px;
+    margin-block: 40px;
+  }
+</style>
