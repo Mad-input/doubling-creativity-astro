@@ -10,6 +10,15 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.13.3"
+    "@fontsource/padauk": "^5.0.13",
+    "@fontsource/poppins": "^5.0.14",
+    "astro": "^4.13.3",
+    "typewriter-effect": "^2.21.0"
+  },
+  "devDependencies": {
+    "standard": "^17.1.0"
+  },
+  "eslintConfig": {
+    "extends": ["standard"]
   }
 }
