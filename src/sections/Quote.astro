@@ -1,0 +1,85 @@
+---
+import QuoteIcon from "../icons/QuoteIcon.astro";
+
+interface Props {
+  text: string;
+  author: string;
+  image: string;
+}
+
+const { text, author, image } = Astro.props;
+---
+
+<section class="quote-main">
+  <img
+    src="/img/quote.svg"
+    alt="quote"
+    class="quote-icon q-1"
+    style="--rotate: 180deg;"
+  />
+  <div class="content-quote">
+    <p class="text-quote">
+      {text}
+      <strong>{author}</strong>
+    </p>
+    <img src={image} alt=`image of ${author}` />
+  </div>
+  <img src="/img/quote.svg" alt="quote" class="quote-icon q-2" />
+</section>
+
+<style>
+  .quote-main {
+    display: flex;
+    flex-direction: column;
+    margin-block: var(--margin-between);
+
+    .quote-icon {
+      width: 150px;
+      transform: rotate(var(--rotate, 0deg));
+      opacity: 0.5;
+      &.q-2 {
+        align-self: flex-end;
+      }
+    }
+
+    .content-quote {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      .text-quote {
+        flex: 0.5;
+        border-left: 4px solid var(--color-b);
+        padding: 15px;
+        font-size: 20px;
+        color: #ededed;
+        shape-outside: ellipse(130px 140px at 20% 20%);
+        text-wrap: pretty;
+
+        strong {
+          display: block;
+          font-size: 30px;
+          display: flex;
+          align-items: center;
+          margin-top: 20px;
+          &::before {
+            content: "";
+            display: inline-block;
+            height: 5px;
+            width: 70px;
+            background: #fff;
+            margin-right: 10px;
+          }
+        }
+      }
+
+      img {
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+        filter: grayscale(1);
+        border-radius: 100%;
+      }
+    }
+  }
+</style>
