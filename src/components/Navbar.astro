@@ -11,7 +11,9 @@ import Logo from "../icons/Logo.astro";
     <li class="list-item"><a href="#">Articles</a></li>
   </ul>
   <div class="buttons-s-i">
-    <button class="btn s">Sing Up</button>
+    <button class="btn s"
+      ><a href="/register" rel="noopener noreferrer">Sing up</a></button
+    >
     <button class="btn i">Log In</button>
   </div>
 </nav>
@@ -74,6 +76,11 @@ import Logo from "../icons/Logo.astro";
         color: #fff;
         padding: 5px 15px;
         border-radius: 8px;
+
+        a {
+          text-decoration: none;
+          color: #fff;
+        }
       }
 
       & .s {

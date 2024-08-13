@@ -1,0 +1,58 @@
+---
+import "@fontsource/poppins";
+
+interface Props {
+  title: string;
+  background: string;
+}
+const { title, background } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body style={`--back:url(${background});`}>
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>
+
+<style is:global>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  :root {
+    --body-bg: linear-gradient(to top, #24243e, #302b63, #0f0c29);
+    --color-a: #1a1ae5;
+    --color-b: #242447;
+    --margin-between: 50px;
+  }
+
+  body {
+    background: #0f0c29;
+    background: linear-gradient(rgba(0, 0, 0, 0.5));
+    min-height: 100vh;
+
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin: auto;
+  }
+</style>

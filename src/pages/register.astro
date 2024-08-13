@@ -1,0 +1,125 @@
+---
+import FormRegister from "../components/FormRegister";
+import LayoutSingIn from "../layouts/LayoutSing-in.astro";
+---
+
+<LayoutSingIn title="Register" background="/img/bg-image-register.jpg">
+  <div class="conatiner-form">
+    <FormRegister server:defer />
+  </div>
+</LayoutSingIn>
+
+<style>
+  .conatiner-form {
+    --bg: rgba(36, 36, 71, 0.7);
+    display: flex;
+    gap: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 20px;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      flex: 1;
+      padding: 20px;
+
+      .title-form {
+        color: #fff;
+        font-size: 30px;
+        text-align: center;
+      }
+
+      .containt-input {
+        position: relative;
+        color: #fff;
+
+        label {
+          position: absolute;
+          left: 10px;
+          top: calc(50% - 16px);
+          transition: 0.1s ease;
+          padding: 0 5px;
+          color: rgba(255, 255, 255, 0.7);
+          pointer-events: none;
+        }
+        input {
+          border: 2px solid rgba(255, 255, 255, 0.7);
+          background: none;
+          padding: 10px 15px;
+          border-radius: 8px;
+          font-size: 15px;
+          width: 100%;
+          outline: none;
+          color: #fff;
+
+          &:not(:placeholder-shown) ~ label,
+          &:focus ~ label {
+            top: -18px;
+            font-size: 12px;
+            left: 5px;
+            color: #fff;
+          }
+        }
+      }
+
+      .btn-submit {
+        border: none;
+        background: var(--color-a);
+        color: #fff;
+        font-weight: bold;
+        font-family: "Poppins", sans-serif;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.1s ease;
+        width: 100%;
+
+        &:hover {
+          opacity: 0.7;
+          scale: 0.95;
+        }
+      }
+    }
+
+    blockquote {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      color: #fff;
+      text-align: center;
+      flex: 0.5;
+
+      img {
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+        border-radius: 100%;
+        filter: grayscale(1);
+      }
+      p {
+        font-size: 20px;
+      }
+
+      cite {
+      }
+    }
+  }
+</style>
+
+<script>
+  const form = document.querySelector("#form") as HTMLFormElement;
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const data = new FormData().getAll();
+    console.log(data);
+  });
+</script>
