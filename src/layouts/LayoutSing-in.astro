@@ -31,15 +31,14 @@ const { title, background } = Astro.props;
   }
 
   :root {
-    --body-bg: linear-gradient(to top, #24243e, #302b63, #0f0c29);
+    --body-bg: url("/img/meteor-bg.svg");
     --color-a: #1a1ae5;
     --color-b: #242447;
-    --margin-between: 50px;
+    --margin-between: 3.125rem;
   }
 
   body {
-    background: #0f0c29;
-    background: linear-gradient(rgba(0, 0, 0, 0.5));
+    background: no-repeat center/cover var(--body-bg);
     min-height: 100vh;
 
     margin: 0 auto;
@@ -52,7 +51,8 @@ const { title, background } = Astro.props;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    padding: 2.5rem;
     margin: auto;
+    width: 100%;
   }
 </style>

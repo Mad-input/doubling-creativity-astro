@@ -15,7 +15,7 @@ const { title } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="description" content="Doubling Creativity" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="public/img/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/img/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
@@ -36,17 +36,27 @@ const { title } = Astro.props;
   }
 
   :root {
-    --body-bg: linear-gradient(to top, #24243e, #302b63, #0f0c29);
+    --body-bg: url("/img/meteor-bg.svg");
     --color-a: #1a1ae5;
     --color-b: #242447;
-    --margin-between: 50px;
+    --margin-between: 60px;
   }
 
   body {
-    background: #0f0c29;
-    background: no-repeat var(--body-bg);
+    background: no-repeat center/cover var(--body-bg);
     min-height: 100vh;
     max-width: 70%;
     margin: 0 auto;
+  }
+
+  @media screen and (max-width: 1100px) {
+    :root {
+      font-size: 13px;
+    }
+
+    body {
+      max-width: 100%;
+      padding-inline: 20px;
+    }
   }
 </style>

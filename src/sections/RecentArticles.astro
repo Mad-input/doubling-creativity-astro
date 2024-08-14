@@ -23,5 +23,12 @@ import { articles } from "../mock/artcles-main.json";
     align-items: center;
     flex-wrap: wrap;
     margin-block: var(--margin-between);
+    gap: 20px;
+  }
+
+  @media screen and (max-width: 1100px) {
+    .resent-articles {
+      flex-direction: column;
+    }
   }
 </style>

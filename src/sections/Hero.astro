@@ -16,13 +16,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 100px;
+    gap: 6.25rem;
     margin-block: var(--margin-between);
 
     .content {
       color: #fff;
       .hero-title {
-        font-size: 90px;
+        font-size: 5.625rem;
       }
 
       .hero-text {
@@ -33,7 +33,7 @@
 
     .image-container {
       img {
-        width: 600px;
+        width: 37.5rem;
         animation: translate 2s linear alternate infinite;
       }
     }
@@ -44,7 +44,25 @@
       transform: translateY(0);
     }
     to {
-      transform: translateY(30px);
+      transform: translateY(1.875rem);
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+    .hero-main {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .content {
+        text-align: center;
+      }
+
+      .image-container {
+        img {
+          width: 100%;
+        }
+      }
     }
   }
 </style>
