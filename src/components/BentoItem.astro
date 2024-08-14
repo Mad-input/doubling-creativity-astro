@@ -20,12 +20,11 @@ const { title, description, idImage } = Astro.props;
 <style>
   .bento-item {
     background:
-      linear-gradient(to top, rgba(0, 0, 0, 0.6) 70%, transparent),
+      linear-gradient(to top, rgba(0, 0, 0, 0.7) 70%, transparent),
       var(--bg) no-repeat;
     background-size: 100%;
     background-position: center center;
     border-radius: 1.25rem;
-    backdrop-filter: blur(1.25rem);
     padding: 1.25rem;
     display: flex;
     flex-direction: column;
@@ -34,7 +33,7 @@ const { title, description, idImage } = Astro.props;
     text-decoration: none;
     overflow: hidden;
     transition: 0.3s ease-in-out;
-    box-shadow: 0.625rem 0.625rem 0 rgba(0, 0, 0, 0.6);
+    box-shadow: 0.625rem 0.625rem 0 var(--shadow-color);
 
     .title-bento-item {
       font-size: 2.5rem;

@@ -157,4 +157,9 @@ import Logo from "../icons/Logo.astro";
     }
   }
   onScroll();
+
+  const btnShowNavbar = document.querySelector(".btn-bars");
+  btnShowNavbar.addEventListener("click", () => {
+    document.querySelector(".navbar-mobile").classList.add("show");
+  });
 </script>
