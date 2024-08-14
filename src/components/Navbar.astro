@@ -1,4 +1,5 @@
 ---
+import Bars from "../icons/Bars.astro";
 import Logo from "../icons/Logo.astro";
 ---
 
@@ -11,17 +12,20 @@ import Logo from "../icons/Logo.astro";
     <li class="list-item"><a href="#">Articles</a></li>
   </ul>
   <div class="buttons-s-i">
-    <button class="btn s"
-      ><a href="/register" rel="noopener noreferrer">Sing up</a></button
-    >
+    <button class="btn s">
+      <a href="/register" rel="noopener noreferrer">Sing up</a>
+    </button>
     <button class="btn i">Log In</button>
   </div>
+  <button class="btn-bars">
+    <Bars size="30" />
+  </button>
 </nav>
 
 <style>
   .navbar {
     display: flex;
-    padding: 10px 30px;
+    padding: 0.625rem 1.875rem;
     align-items: center;
     position: sticky;
     top: 0;
@@ -34,7 +38,7 @@ import Logo from "../icons/Logo.astro";
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 30px;
+      gap: 1.875rem;
       .list-item {
         list-style: none;
         position: relative;
@@ -42,7 +46,7 @@ import Logo from "../icons/Logo.astro";
           content: "";
           display: inline-block;
           position: absolute;
-          height: 2px;
+          height: 0.125rem;
           background: #fff;
           width: 0;
           right: 0;
@@ -59,7 +63,7 @@ import Logo from "../icons/Logo.astro";
         }
         svg {
           width: fit-content;
-          height: 100px;
+          height: 6.25rem;
           animation: fade-in 1s ease-in-out;
           transition: 0.3s ease;
         }
@@ -74,8 +78,8 @@ import Logo from "../icons/Logo.astro";
         color: currentColor;
         cursor: pointer;
         color: #fff;
-        padding: 5px 15px;
-        border-radius: 8px;
+        padding: 0.3125rem 0.9375rem;
+        border-radius: 0.5rem;
 
         a {
           text-decoration: none;
@@ -90,6 +94,18 @@ import Logo from "../icons/Logo.astro";
         background: var(--color-b);
       }
     }
+
+    .btn-bars {
+      background: none;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      display: none;
+      svg {
+        stroke: #fff;
+        vertical-align: top;
+      }
+    }
   }
 
   @keyframes fade-in {
@@ -101,8 +117,27 @@ import Logo from "../icons/Logo.astro";
 
   @keyframes blur {
     to {
-      background: rgba(255, 255, 255, 0.05);
+      background: rgba(0, 0, 0, 0.5);
       backdrop-filter: blur(20px);
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+    .navbar {
+      .buttons-s-i {
+        display: none;
+      }
+      .btn-bars {
+        display: inline-block;
+      }
+
+      .list-navbar {
+        .list-item {
+          &:not(:has(svg)) {
+            display: none;
+          }
+        }
+      }
     }
   }
 </style>

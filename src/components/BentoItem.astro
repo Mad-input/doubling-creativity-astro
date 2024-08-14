@@ -24,9 +24,9 @@ const { title, description, idImage } = Astro.props;
       var(--bg) no-repeat;
     background-size: 100%;
     background-position: center center;
-    border-radius: 20px;
-    backdrop-filter: blur(20px);
-    padding: 20px;
+    border-radius: 1.25rem;
+    backdrop-filter: blur(1.25rem);
+    padding: 1.25rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -34,16 +34,16 @@ const { title, description, idImage } = Astro.props;
     text-decoration: none;
     overflow: hidden;
     transition: 0.3s ease-in-out;
-    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.6);
+    box-shadow: 0.625rem 0.625rem 0 rgba(0, 0, 0, 0.6);
 
     .title-bento-item {
-      font-size: 40px;
+      font-size: 2.5rem;
     }
 
     &:hover {
       background-size: 110%;
 
-      transform: translate(10px, 10px);
+      transform: translate(0.625rem, 0.625rem);
       .description-bento-item {
         transform: translateY(0);
         opacity: 1;
@@ -51,7 +51,7 @@ const { title, description, idImage } = Astro.props;
     }
 
     .description-bento-item {
-      transform: translateY(40px);
+      transform: translateY(2.5rem);
       transition: 0.3s ease-in-out;
       opacity: 0;
     }
@@ -64,6 +64,12 @@ const { title, description, idImage } = Astro.props;
     }
     &:nth-child(4) {
       grid-column: span 2;
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+    .bento-item {
+      grid-column: 1 !important;
     }
   }
 </style>

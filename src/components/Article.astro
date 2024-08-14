@@ -33,10 +33,10 @@ const { title, url, urlImage } = Astro.props;
     }
 
     .image-container-article {
-      box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.6);
-      border-radius: 10px;
-      width: 300px;
-      height: 400px;
+      box-shadow: 0.625rem 0.625rem 0 rgba(0, 0, 0, 0.6);
+      border-radius: 0.625rem;
+      width: 100%;
+      height: 25rem;
       background:
         linear-gradient(to top, rgba(0, 0, 0, 0.6) 70%, transparent),
         var(--bg) center/cover;
@@ -47,6 +47,12 @@ const { title, url, urlImage } = Astro.props;
       text-decoration: none;
       color: #fff;
       font-weight: bold;
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+    .article-main {
+      width: 100%;
     }
   }
 </style>
