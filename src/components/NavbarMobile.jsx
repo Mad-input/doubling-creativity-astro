@@ -8,6 +8,7 @@ export default function NavbarMobile() {
     const handleResize = () => {
       setIsmobile(window.innerWidth < 1100)
     }
+
     window.addEventListener('resize', handleResize)
     handleResize()
     return () => {
@@ -16,6 +17,10 @@ export default function NavbarMobile() {
   }, [])
   const handleNavbar = (e) => {
     e.target.parentElement.classList.remove("show")
+  }
+  const handleDialog = ()=> {
+    const modal = document.querySelector('.dialog-modal')
+    modal.style.display = 'flex'
   }
 
   return (
@@ -46,7 +51,7 @@ export default function NavbarMobile() {
 
           <a href="/register" rel="noopener noreferrer" className="btn s">Sing up</a>
 
-          <button className="btn i">Log In</button>
+          <button className="btn i" id="btnShowModal" onClick={handleDialog}>Log In</button>
         </div>
       </nav>
       : ''
