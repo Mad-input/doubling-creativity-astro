@@ -1,5 +1,6 @@
 import { useForm } from 'react-hook-form'
 import TagError from './TagError.jsx'
+import '../assets/css/stylesFormLogin.css'
 
 export default function FormRegister() {
   const {
