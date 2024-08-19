@@ -16,6 +16,7 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "astro": "^4.13.3",
+    "axios": "^1.7.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-hook-form": "^7.52.2",
@@ -25,6 +26,8 @@
     "standard": "^17.1.0"
   },
   "eslintConfig": {
-    "extends": ["standard"]
+    "extends": [
+      "standard"
+    ]
   }
 }
