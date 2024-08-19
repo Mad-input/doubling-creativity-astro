@@ -1,0 +1,66 @@
+.tag-user {
+  --radius: 15px;
+  border: none;
+  background: var(--color-b);
+  outline: none;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 15px;
+  margin-inline: 10px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  position: relative;
+
+  img {
+    width: 20px;
+    vertical-align: top;
+    rotate: 180deg;
+    transition: .3s ease;
+
+    &.rotate {
+      rotate: 0deg;
+    }
+  }
+
+  .option-list-user {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: var(--color-b);
+    border-radius: var(--radius);
+    padding: 10px 20px;
+    top: 35px;
+    width: 100%;
+    animation: fade-in .5s ease-in-out;
+    li {
+      list-style: none;
+      &:hover {
+        opacity: .5;
+      }
+      &.logout-link {
+        color: var(--color-error, #f80);
+      }
+
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@keyframes fade-in {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
