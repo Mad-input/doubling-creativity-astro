@@ -8,6 +8,8 @@ image: "/img/tutorials/image-categories-oil-painting.webp"
 description: "Aprende las técnicas básicas para pintar al óleo con este tutorial para principiantes. Cubre todo, desde los materiales hasta la aplicación de capas de color."
 ---
 
+<h1 class="title">Tutorial de Pintura al Óleo para Principiantes</h1>
+
 ## Introducción
 
 La pintura al óleo es una de las técnicas más clásicas en el mundo del arte. Su versatilidad y tiempo de secado relativamente largo permiten a los artistas mezclar colores de manera fluida y realizar correcciones durante el proceso. En este tutorial, aprenderás los fundamentos para comenzar a pintar al óleo, desde la elección de los materiales hasta la aplicación de las primeras capas de pintura.

@@ -13,6 +13,7 @@
     "@astrojs/react": "^3.6.2",
     "@fontsource/padauk": "^5.0.13",
     "@fontsource/poppins": "^5.0.14",
+    "@fontsource/varela-round": "^5.0.14",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "astro": "^4.13.3",

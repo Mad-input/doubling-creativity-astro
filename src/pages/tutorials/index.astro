@@ -3,7 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import { getCollection } from "astro:content";
 import Banner from "../../sections/Banner.astro";
 import CardTutorial from "../../components/CardTutorial.astro";
-
+import "@fontsource/varela-round";
 const tutorials = await getCollection("tutorials");
 ---
 
@@ -13,14 +13,28 @@ const tutorials = await getCollection("tutorials");
     prhase="“Descubrí que podía decir las cosas con color y formas, cosas que no podía decir de otra manera porque no encontraba las palabras.” Georgia O’Keeffe (1887-1986)."
     video="/video/video-banner-1.mp4"
   />
-  {
-    tutorials.map(({ slug, data: { title, description, image, category } }) => (
-      <CardTutorial
-        title={title}
-        description={description}
-        image={image}
-        link={`/tutorials/${slug}`}
-      />
-    ))
-  }
+  <section class="tutorials">
+    {
+      tutorials.map(
+        ({ slug, data: { title, description, image, category } }) => (
+          <CardTutorial
+            title={title}
+            description={description}
+            image={image}
+            link={`/tutorials/${slug}`}
+            category={category}
+          />
+        ),
+      )
+    }
+  </section>
 </Layout>
+
+<style>
+  .tutorials {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-block: var(--margin-between);
+  }
+</style>

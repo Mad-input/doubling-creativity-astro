@@ -68,7 +68,6 @@ export default function FormRegister() {
 
     try {
       const data = await registerUser({ name: username, email, password })
-      console.log(data.data)
     } catch (error) {
       setError(error.response.data.error)
     }

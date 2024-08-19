@@ -7,6 +7,7 @@ tags: ["guitarra", "principiantes", "música", "tutorial"]
 image: "/img/tutorials/image-categories-guitar.webp"
 description: "Este tutorial te ayudará a tocar tus primeros acordes en la guitarra. Aprende a afinarla, la postura correcta y los acordes más básicos."
 ---
+<h1 class="title">Tutorial de Guitarra para Principiantes: Aprende tus Primeros Acordes</h1>
 
 ## Introducción
 

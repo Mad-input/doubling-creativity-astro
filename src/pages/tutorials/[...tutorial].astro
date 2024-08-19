@@ -1,0 +1,76 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import "@fontsource/varela-round";
+// 1. Genera una nueva ruta para cada entrada de colección
+export async function getStaticPaths() {
+  const tutorialsEntries = await getCollection("tutorials");
+  return tutorialsEntries.map((entry) => ({
+    params: { tutorial: entry.slug },
+    props: { entry },
+  }));
+}
+// 2. Para tu plantilla, puedes obtener la entrada directamente de la prop
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<Layout title={entry.data.title}>
+  <div class="tutorial-content">
+    <Content />
+  </div>
+</Layout>
+
+<style>
+  .tutorial-content {
+    background: #1e1c29;
+    padding: 30px 35px;
+    margin-block: var(--margin-between);
+
+    .title {
+      text-align: center;
+      color: #e4d1b9;
+      font-size: 50px;
+    }
+
+    h2 {
+      color: #fff;
+      font-size: 30px;
+    }
+
+    h3,
+    h4 {
+      font-size: 25px;
+      color: #f7f17d;
+      margin: 5px 0;
+    }
+
+    h4 {
+      font-size: 16px;
+    }
+
+    p {
+      font-family: "Varela Round", sans-serif;
+      font-size: 18px;
+      color: #cfc49d;
+      padding-left: 15px;
+      margin: 20px 0;
+    }
+
+    ul,
+    ol {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-block: 25px;
+      li {
+        list-style: none;
+        padding: 10px;
+        background: #8396b5;
+        border-left: 4px solid #5788a5;
+        font-size: 18px;
+        color: #281b39;
+      }
+    }
+  }
+</style>

@@ -22,7 +22,7 @@ const { text, author, image } = Astro.props;
       {text}
       <strong>{author}</strong>
     </p>
-    <img src={image} alt=`image of ${author}` />
+    <img src={image} alt=`image of ${author}` loading="lazy" />
   </div>
   <img src="/img/quote.svg" alt="quote" class="quote-icon q-2" />
 </section>

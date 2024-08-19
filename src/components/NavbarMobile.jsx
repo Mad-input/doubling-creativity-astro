@@ -51,9 +51,9 @@ export default function NavbarMobile() {
       </button>
       <ul className="list-navbar">
         <li className="list-item"><a href="/">Home</a></li>
-        <li className="list-item"><a href="#">Courses</a></li>
-        <li className="list-item"><a href="#">About Us</a></li>
-        <li className="list-item"><a href="#">Articles</a></li>
+        <li className="list-item"><a href="/tutorials">Tutorials</a></li>
+        <li className="list-item"><a href="/about">About Us</a></li>
+        <li className="list-item"><a href="/articles">Articles</a></li>
       </ul>
       {
         !isAuthenticated &&
