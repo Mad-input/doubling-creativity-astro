@@ -1,0 +1,97 @@
+<footer class="footer">
+  <div class="header-footer">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/tutorials">Tutorials</a></li>
+    </ul>
+    <div class="container">
+      <div class="container-logo">
+        <img src="/img/logo-icon.svg" alt="logo" />
+      </div>
+      <h2 class="title-body">Doubling Creativity</h2>
+    </div>
+    <ul>
+      <li><a href="/about">About Us</a></li>
+      <li><a href="/articles">Articles</a></li>
+    </ul>
+  </div>
+  <blockquote class="copy">
+    <p>
+      <i>Doubling Creativity 2024</i> | doublingcreativity@support.com
+    </p>
+  </blockquote>
+</footer>
+
+<style>
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--color-b);
+    border-radius: 1.25rem 1.25rem 0 0;
+
+    .header-footer {
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.875rem;
+      width: 70%;
+
+      .container {
+        .container-logo {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 1.25rem;
+          &::after,
+          &::before {
+            content: "";
+            display: inline-block;
+            width: 100%;
+            height: 0.1875rem;
+            background: #fff;
+          }
+
+          img {
+            width: 4.375rem;
+          }
+        }
+        .title-body {
+          font-size: 1.875rem;
+          color: #fff;
+          text-align: center;
+        }
+      }
+
+      ul {
+        li {
+          list-style: none;
+          text-align: center;
+          a {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .copy {
+      background: #000;
+      width: 100%;
+      margin-top: 1.25rem;
+
+      p {
+        color: #fff;
+        text-align: center;
+        padding: 0.3125rem 0;
+      }
+    }
+  }
+
+  @media screen and (width < 1100px) {
+    ul {
+      display: none;
+    }
+  }
+</style>

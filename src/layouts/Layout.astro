@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar.astro";
 import "@fontsource/poppins";
 import NavbarMobile from "../components/NavbarMobile.jsx";
 import FormLogin from "../components/FormLogin";
+import Footer from "../components/Footer.astro";
 
 interface Props {
   title: string;
@@ -29,6 +30,7 @@ const { title } = Astro.props;
       <slot />
     </main>
   </body>
+  <Footer />
 </html>
 
 <style is:global>
@@ -73,13 +75,13 @@ const { title } = Astro.props;
 <script>
   const btnCloseModal = document.querySelector(".btn-close-modal");
   const modal = document.querySelector(".dialog-modal") as HTMLDialogElement;
-  btnCloseModal.addEventListener("click", () => {
+  btnCloseModal?.addEventListener("click", () => {
     modal.style.display = "none";
   });
 
   const btnShowModal = document.querySelector(".btn.i");
 
-  btnShowModal.addEventListener("click", () => {
+  btnShowModal?.addEventListener("click", () => {
     modal.style.display = "flex";
   });
 </script>
