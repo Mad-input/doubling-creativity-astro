@@ -2,8 +2,10 @@ import { useForm } from "react-hook-form"
 import '../assets/css/stylesFormLogin.css'
 import TagError from './TagError'
 import { loginUser } from "../api/auth"
+import { useState } from "react"
 
 export default function FormLogin() {
+  const [error, setError] = useState(null)
   const {
     register,
     handleSubmit,
@@ -15,8 +17,9 @@ export default function FormLogin() {
       const response = await loginUser(values)
       localStorage.setItem('user', JSON.stringify(response.data))
       window.location.reload()
-    } catch (error) {
-      console.log(error)
+    } catch (e) {
+      setError(e.response.data.error)
+
     }
   })
 
@@ -59,6 +62,7 @@ export default function FormLogin() {
         <div className="logo">
           <a href="/"><img src="/img/logo-icon.svg" alt="logo" /></a>
         </div>
+        {error && <TagError text={error}></TagError>}
         <div className="containt-input">
           <input
             className={`${errors.email ? 'error' : 'ok'}`}
