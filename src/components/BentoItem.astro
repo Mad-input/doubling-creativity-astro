@@ -8,11 +8,7 @@ interface Props {
 const { title, description, idImage } = Astro.props;
 ---
 
-<a
-  style=`--bg: url(/img/image-categories-${idImage}.webp);`
-  class="bento-item"
-  href="#"
->
+<a style=`--bg: url(${idImage});` class="bento-item" href="#">
   <h1 class="title-bento-item">{title}</h1>
   <p class="description-bento-item">{description}</p>
 </a>

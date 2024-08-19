@@ -1,16 +1,21 @@
 import { useForm } from 'react-hook-form'
 import TagError from './TagError.jsx'
 import '../assets/css/stylesFormLogin.css'
+import { useEffect, useState } from 'react'
+import { registerUser } from '../api/auth.js'
 
 export default function FormRegister() {
   const {
     handleSubmit,
     register,
     watch,
+    reset,
     formState: {
       errors
     }
   } = useForm()
+
+  const [error, setError] = useState('')
 
   const optionsUsername = {
     required: {
@@ -58,9 +63,24 @@ export default function FormRegister() {
   }
 
 
-  const onSubmit = handleSubmit((values) => {
-    console.log(values);
+  const onSubmit = handleSubmit(async (values) => {
+    const { username, email, password } = values
+
+    try {
+      const data = await registerUser({ name: username, email, password })
+      console.log(data.data)
+    } catch (error) {
+      setError(error.response.data.error)
+    }
+    reset()
+    window.location.replace('/')
   })
+
+  useEffect(() => {
+    setTimeout(() => {
+      setError('')
+    }, 2000);
+  }, [error])
 
   return (
     <form id="form" onSubmit={onSubmit}>
@@ -68,6 +88,7 @@ export default function FormRegister() {
       <div className="logo">
         <a href="/"><img src="/img/logo-icon.svg" alt="logo" /></a>
       </div>
+      {error && <TagError text={error}></TagError>}
       <div className="containt-input">
         <input
           className={`${errors.username ? 'error' : 'ok'}`}

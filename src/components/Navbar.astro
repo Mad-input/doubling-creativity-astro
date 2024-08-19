@@ -1,22 +1,18 @@
 ---
 import Bars from "../icons/Bars.astro";
 import Logo from "../icons/Logo.astro";
+import UserStatus from "./UserStatus.jsx";
 ---
 
 <nav class="navbar">
   <ul class="list-navbar">
     <li class="list-item"><a href="/">Home</a></li>
-    <li class="list-item"><a href="#">Courses</a></li>
+    <li class="list-item"><a href="/tutorials">Tutorials</a></li>
     <li class="list-item"><Logo /></li>
     <li class="list-item"><a href="#">About Us</a></li>
     <li class="list-item"><a href="#">Articles</a></li>
   </ul>
-  <div class="buttons-s-i">
-    <button class="btn s">
-      <a href="/register" rel="noopener noreferrer">Sing up</a>
-    </button>
-    <button class="btn i">Log In</button>
-  </div>
+  <UserStatus client:load />
   <button class="btn-bars">
     <Bars size="30" />
   </button>
@@ -159,7 +155,7 @@ import Logo from "../icons/Logo.astro";
   onScroll();
 
   const btnShowNavbar = document.querySelector(".btn-bars");
-  btnShowNavbar.addEventListener("click", () => {
-    document.querySelector(".navbar-mobile").classList.add("show");
+  btnShowNavbar?.addEventListener("click", () => {
+    document.querySelector(".navbar-mobile")?.classList.add("show");
   });
 </script>
