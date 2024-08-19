@@ -1,0 +1,26 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+import Banner from "../../sections/Banner.astro";
+import CardTutorial from "../../components/CardTutorial.astro";
+
+const tutorials = await getCollection("tutorials");
+---
+
+<Layout title="Tutorials | Doubling Creativity">
+  <Banner
+    title="Tutorials"
+    prhase="“Descubrí que podía decir las cosas con color y formas, cosas que no podía decir de otra manera porque no encontraba las palabras.” Georgia O’Keeffe (1887-1986)."
+    video="/video/video-banner-1.mp4"
+  />
+  {
+    tutorials.map(({ slug, data: { title, description, image, category } }) => (
+      <CardTutorial
+        title={title}
+        description={description}
+        image={image}
+        link={`/tutorials/${slug}`}
+      />
+    ))
+  }
+</Layout>

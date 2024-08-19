@@ -1,5 +1,4 @@
 ---
-import FormLogin from "../components/FormLogin";
 import Layout from "../layouts/Layout.astro";
 import BentoGrid from "../sections/BentoGrid.astro";
 import Hero from "../sections/Hero.astro";
@@ -8,7 +7,6 @@ import RecentArticles from "../sections/RecentArticles.astro";
 ---
 
 <Layout title="Doubling Creativity">
-  <FormLogin client:visible></FormLogin>
   <Hero />
   <h2 class="title-main">Popular categories</h2>
   <BentoGrid />
@@ -25,22 +23,7 @@ import RecentArticles from "../sections/RecentArticles.astro";
   .title-main {
     display: inline-block;
     color: #fff;
-    font-size: 1.875rem;
+    font-size: 1.5625rem;
     margin-block: 1.25rem;
   }
 </style>
-
-<script>
-  const btnCloseModal = document.querySelector(".btn-close-modal")
-  const modal = document.querySelector('.dialog-modal') as HTMLDialogElement
-  btnCloseModal.addEventListener('click', ()=> {
-    modal.style.display = 'none'
-  })
-
-  const btnShowModal = document.querySelector('.btn.i')
- 
-    btnShowModal.addEventListener('click', ()=> {
-      modal.style.display = 'flex'
-    })
-
-</script>

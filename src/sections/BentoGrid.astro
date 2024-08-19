@@ -1,17 +1,28 @@
 ---
 import BentoItem from "../components/BentoItem.astro";
-import { categories } from "../mock/categories.json";
+import { getCollection } from "astro:content";
+
+const allTutorials = await getCollection("tutorials");
+const uniqueCategories = new Set<string>();
+
+const showTutorials = allTutorials.filter((tutorial) => {
+  if (uniqueCategories.has(tutorial.data.category)) return false; // Si ya está en el set, no lo incluimos
+  uniqueCategories.add(tutorial.data.category); // Agregar la nueva categoría al set
+  return true; // Incluir el tutorial si la categoría es nueva
+});
 ---
 
 <section class="bento-grid">
   {
-    categories.map((category) => (
-      <BentoItem
-        title={category.title}
-        description={category.description}
-        idImage={category.IdImage}
-      />
-    ))
+    showTutorials
+      .slice(0, 5)
+      .map((tutorial) => (
+        <BentoItem
+          title={tutorial.data.category}
+          description={tutorial.data.description}
+          idImage={tutorial.data.image}
+        />
+      ))
   }
 </section>
 
