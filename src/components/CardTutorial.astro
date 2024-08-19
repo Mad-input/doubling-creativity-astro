@@ -89,4 +89,10 @@ const { title, description, image, link, category } = Astro.props;
       }
     }
   }
+
+  @media screen and (width < 1100px) {
+    .card-article {
+      flex-direction: column;
+    }
+  }
 </style>
