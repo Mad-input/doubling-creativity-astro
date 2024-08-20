@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import "@fontsource/varela-round";
+import QuizComponent from "../../components/QuizComponent";
 // 1. Genera una nueva ruta para cada entrada de colección
 export async function getStaticPaths() {
   const tutorialsEntries = await getCollection("tutorials");
@@ -13,23 +14,30 @@ export async function getStaticPaths() {
 // 2. Para tu plantilla, puedes obtener la entrada directamente de la prop
 const { entry } = Astro.props;
 const { Content } = await entry.render();
+const { quiz } = entry.data;
 ---
 
 <Layout title={entry.data.title}>
   <div class="tutorial-content">
     <Content />
   </div>
+  <QuizComponent questions={quiz} client:load />
 </Layout>
 
 <style>
   .tutorial-content {
-    background: #1e1c29;
+    --bg: #1e1c29;
+    --color-title: #e4d1b9;
+    --color-sub: #f7f17d;
+    --color-text: #cfc49d;
+    background: var(--bg);
     padding: 30px 35px;
     margin-block: var(--margin-between);
+    margin-bottom: 0;
 
     .title {
       text-align: center;
-      color: #e4d1b9;
+      color: var(--color-title);
       font-size: 3.125rem;
       margin-bottom: 40px;
     }
@@ -42,7 +50,7 @@ const { Content } = await entry.render();
     h3,
     h4 {
       font-size: 1.5625rem;
-      color: #f7f17d;
+      color: var(--color-sub);
       margin: 0.3125rem 0;
     }
 
@@ -53,7 +61,7 @@ const { Content } = await entry.render();
     p {
       font-family: "Varela Round", sans-serif;
       font-size: 1.125rem;
-      color: #cfc49d;
+      color: var(--color-text);
       padding-left: 0.9375rem;
       margin: 1.25rem 0;
     }

@@ -6,6 +6,19 @@ category: "Pintura"
 tags: ["óleo", "principiantes", "arte", "tutorial"]
 image: "/img/tutorials/image-categories-oil-painting.webp"
 description: "Aprende las técnicas básicas para pintar al óleo con este tutorial para principiantes. Cubre todo, desde los materiales hasta la aplicación de capas de color."
+quiz:
+  - question: "¿Cuál es el primer paso al pintar al óleo?"
+    options:
+      - "Preparar la superficie"
+      - "Aplicar el color más oscuro"
+      - "Usar los pinceles más finos"
+    answer: "Preparar la superficie"
+  - question: "¿Qué tipo de pinceles son ideales?"
+    options:
+      - "Cerdas duras"
+      - "Cerdas suaves"
+      - "Ambos"
+    answer: "Ambos"
 ---
 
 <h1 class="title">Tutorial de Pintura al Óleo para Principiantes</h1>

@@ -9,7 +9,12 @@ const tutorialCollection = defineCollection({
     category: z.string(),
     tags: z.array(z.string()),
     image: z.string(),
-    description: z.string()
+    description: z.string(),
+    quiz: z.array(z.object({
+      question: z.string(),
+      options: z.array(z.string()),
+      answer: z.string()
+    }))
   }),
 })
 

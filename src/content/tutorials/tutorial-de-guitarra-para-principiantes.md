@@ -6,6 +6,43 @@ category: "Música"
 tags: ["guitarra", "principiantes", "música", "tutorial"]
 image: "/img/tutorials/image-categories-guitar.webp"
 description: "Este tutorial te ayudará a tocar tus primeros acordes en la guitarra. Aprende a afinarla, la postura correcta y los acordes más básicos."
+quiz:
+  - question: "¿Cuál es el nombre de la cuerda más gruesa en una guitarra?"
+    options:
+      - "Mi (E) grave"
+      - "La (A)"
+      - "Re (D)"
+    answer: "Mi (E) grave"
+  - question: "¿Cuál es el acorde mayor que se forma en el segundo traste en todas las cuerdas?"
+    options:
+      - "A"
+      - "C"
+      - "D"
+    answer: "A"
+  - question: "¿Cuántas cuerdas tiene una guitarra estándar?"
+    options:
+      - "4"
+      - "6"
+      - "8"
+    answer: "6"
+  - question: "¿Qué dedos se utilizan para hacer el acorde de sol mayor (G) en guitarra?"
+    options:
+      - "Índice y medio"
+      - "Índice, medio y anular"
+      - "Índice, medio, anular y meñique"
+    answer: "Índice, medio, anular y meñique"
+  - question: "¿Qué significa tocar un 'arpegio' en guitarra?"
+    options:
+      - "Tocar las cuerdas en orden, una por una"
+      - "Rasguear todas las cuerdas a la vez"
+      - "Tocar solo las cuerdas graves"
+    answer: "Tocar las cuerdas en orden, una por una"
+  - question: "¿Cómo se llama la técnica de cambiar entre acordes sin detenerse?"
+    options:
+      - "Cambio rápido"
+      - "Cambio de acorde"
+      - "Cambio fluido"
+    answer: "Cambio fluido"
 ---
 <h1 class="title">Tutorial de Guitarra para Principiantes: Aprende tus Primeros Acordes</h1>
 
@@ -92,4 +129,4 @@ Con estos pasos básicos, estarás en el camino para aprender guitarra. Recuerda
 
 ---
 
-¡Esperamos que este tutorial te haya ayudado a dar tus primeros pasos con la guitarra! Si tienes dudas o quieres compartir tu progreso, ¡deja un comentario!
+¡Esperamos que este tutorial te haya ayudado a dar tus primeros pasos con la guitarra! Aquí tienes un pequeño quiz para poner a prueba lo que has aprendido:
