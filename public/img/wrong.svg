@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="a">
+   <stop stop-color="#979ec1" offset="0"/>
+   <stop stop-color="#c14682" offset="1"/>
+  </linearGradient>
+  <linearGradient id="c" x1="-2.5e-5" x2="1.0189" y1=".52232" y2=".52232" xlink:href="#a"/>
+  <linearGradient id="b" x1=".042735" y1=".52663" y2=".52663" xlink:href="#a"/>
+ </defs>
+ <g fill-rule="evenodd">
+  <path d="m5.1667 11.667l12.5-9.6667 40.333 47.167-2.5 8.8333-50.333-46.333z" fill="url(#c)"/>
+  <path d="m46.833 3.5l15.167 10.333-43 39.333-15.5 3.5 43.333-53.167z" fill="url(#b)"/>
+  <g fill="#f00">
+   <path d="m2 10.167l12.833-9.1667 41 48-0.5 9.5-53.333-48.333z"/>
+   <path d="m46 3c4.2778 3.5 8.5556 7 12.833 10.5l-42 38.5-14 5 43.167-54z"/>
+  </g>
+  <path d="m14 3.3333s-10 5.6667-10 6.6667 8 8 8 8-3-3-3-6 5-8.6667 5-8.6667z" fill="#e9dcff"/>
+  <path d="m6.3333 53.333l18.667-21.333s-9 13.5-9 16-9.6667 5.3333-9.6667 5.3333z" fill="#e5ccff"/>
+  <path d="m46.667 5.3333l-6.6667 6.6667s5.5-4 10-2-3.3333-4.6667-3.3333-4.6667z" fill="#f6c7e8"/>
+ </g>
+</svg>
