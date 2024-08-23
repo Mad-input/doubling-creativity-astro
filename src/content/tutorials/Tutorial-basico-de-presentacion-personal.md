@@ -6,6 +6,49 @@ category: "Moda y Estilo"
 tags: ["moda", "vestimenta", "tips", "tutorial"]
 image: "/images/guitarra-principiantes.jpg"
 description: "Este tutorial te ayudara a seguir pasos basicos sobre como combinar tus prendas favoritas y vestirte para cualquier ocasión. "
+quiz:
+  - question: "¿Qué aspecto es crucial para una buena apariencia personal?"
+    options:
+      - "Usar ropa cara"
+      - "Mantener una higiene adecuada y elegir vestimenta apropiada"
+      - "Evitar preocuparse por la apariencia"
+    answer: "Mantener una higiene adecuada y elegir vestimenta apropiada"
+
+  - question: "¿Qué mejora la comunicación efectiva en la presentación personal?"
+    options:
+      - "Evitar el contacto visual"
+      - "Practicar el contacto visual y usar una postura abierta"
+      - "Hablar en voz baja"
+    answer: "Practicar el contacto visual y usar una postura abierta"
+
+  - question: "¿Qué debes hacer para prepararte para una entrevista de trabajo?"
+    options:
+      - "Improvisar una presentación sobre ti mismo"
+      - "Preparar y practicar una breve presentación sobre tu nombre, experiencia y habilidades"
+      - "Hablar solo de tus hobbies"
+    answer: "Preparar y practicar una breve presentación sobre tu nombre, experiencia y habilidades"
+
+  - question: "¿Qué debe complementarse con una vestimenta adecuada en una reunión o evento?"
+    options:
+      - "Nada, la vestimenta es lo único importante"
+      - "Expresión, comportamiento y forma de interactuar"
+      - "Solo el tipo de etiqueta"
+    answer: "Expresión, comportamiento y forma de interactuar"
+
+  - question: "¿Cómo puedes desarrollar habilidades sociales para mejorar tu presentación personal?"
+    options:
+      - "Evitar interactuar con nuevas personas"
+      - "Participar en actividades que involucren interacción social"
+      - "Practicar solo frente al espejo"
+    answer: "Participar en actividades que involucren interacción social"
+
+  - question: "¿Qué actitud es clave para una buena presentación personal?"
+    options:
+      - "Una actitud indiferente"
+      - "Una actitud abierta y positiva"
+      - "Una actitud reservada y cerrada"
+    answer: "Una actitud abierta y positiva"
+
 ---
 
 ## Introducción

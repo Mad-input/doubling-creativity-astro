@@ -7,6 +7,49 @@ tags: ["mimos", "principiantes", "actuación", "tutorial"]
 image: "/images/guitarra-principiantes.jpg"
 description: "En este tutorial, aprenderaz a como ser un maestro de la imitacion, ya sea como un hobbie o para entretaner al publico.
 Aprenderas desde los fundamentos, vesturio y rutinas que te volveran un gran actor."
+quiz:
+  - question: "¿Qué es fundamental para que los gestos en la pantomima sean comprensibles para el público?"
+    options:
+      - "Que sean rápidos y sutiles"
+      - "Que sean exagerados y claros"
+      - "Que sean mínimos y discretos"
+    answer: "Que sean exagerados y claros"
+
+  - question: "¿Cómo debe un mimo interactuar con el entorno en la pantomima?"
+    options:
+      - "Ignorar el espacio a su alrededor"
+      - "Moverse de manera estática"
+      - "Utilizar el espacio y moverse como si interactuara con un entorno imaginario"
+    answer: "Utilizar el espacio y moverse como si interactuara con un entorno imaginario"
+
+  - question: "¿Qué se debe considerar al manejar objetos invisibles en la pantomima?"
+    options:
+      - "Actuar como si fueran ligeros y sin textura"
+      - "Imitar su peso, textura y forma"
+      - "Evitar representar objetos imaginarios"
+    answer: "Imitar su peso, textura y forma"
+
+  - question: "¿Qué es crucial al crear una historia para una actuación de pantomima?"
+    options:
+      - "Improvisar cada acción"
+      - "Definir el inicio, desarrollo y final de la trama"
+      - "Enfocarse solo en la acción final"
+    answer: "Definir el inicio, desarrollo y final de la trama"
+
+  - question: "¿Qué vestuario es típico en un mimo para resaltar sus movimientos?"
+    options:
+      - "Ropa de colores brillantes"
+      - "Camisetas de rayas y pantalones oscuros"
+      - "Ropa formal"
+    answer: "Camisetas de rayas y pantalones oscuros"
+
+  - question: "¿Qué función tienen los guantes blancos en la pantomima?"
+    options:
+      - "Son solo decorativos"
+      - "Ayudan a resaltar los gestos de las manos"
+      - "Ocultan los movimientos de las manos"
+    answer: "Ayudan a resaltar los gestos de las manos"
+
 ---
 
 ## Introducción

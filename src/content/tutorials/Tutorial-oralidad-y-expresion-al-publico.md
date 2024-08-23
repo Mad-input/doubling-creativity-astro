@@ -6,6 +6,42 @@ category: "Habilidades Blandas"
 tags: ["oralidad", "publico", "presentacion", ""]
 image: "/images/guitarra-principiantes.jpg"
 description: "En este tutoriaal, aprenderaz a como ser un maestro de la imitacion, ya sea como un hobbie o para entretaner al publico"
+quiz:
+  - question: "¿Cuál es un elemento fundamental para transmitir confianza al hablar en público?"
+    options:
+      - "Hablar en voz baja"
+      - "Mantener el contacto visual"
+      - "Evitar el contacto visual"
+    answer: "Mantener el contacto visual"
+
+  - question: "¿Qué se debe hacer antes de hablar en público para reducir la ansiedad?"
+    options:
+      - "Improvisar el discurso"
+      - "Preparar y ensayar el discurso"
+      - "Evitar pensar en el discurso"
+    answer: "Preparar y ensayar el discurso"
+
+  - question: "¿Cómo debe ser el uso de gestos y lenguaje corporal al hablar en público?"
+    options:
+      - "Exagerado para captar la atención"
+      - "Natural y complementario al mensaje verbal"
+      - "Evitado para no distraer"
+    answer: "Natural y complementario al mensaje verbal"
+
+  - question: "¿Cuál es una manera efectiva de mantener el interés de la audiencia?"
+    options:
+      - "Hablar de manera monótona"
+      - "Involucrar a la audiencia haciendo preguntas o pidiendo su opinión"
+      - "Evitar interactuar con la audiencia"
+    answer: "Involucrar a la audiencia haciendo preguntas o pidiendo su opinión"
+
+  - question: "¿Qué aspecto vocal es clave para mantener la atención del público?"
+    options:
+      - "Hablar de manera monótona"
+      - "Mantener una entonación y volumen constantes"
+      - "Variar la entonación y volumen"
+    answer: "Variar la entonación y volumen"
+
 ---
 
 ## Introducción

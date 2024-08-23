@@ -6,6 +6,49 @@ category: "Artes Escenicas"
 tags: ["payasos", "animación", "fiesta", "tutorial"]
 image: "/images/guitarra-principiantes.jpg"
 description: "Este tutorial te ayudara a hacer actividades de clown para tus fiestas y eventos"
+quiz:
+  - question: "¿Qué elemento de vestimenta puede ayudar a romper el hielo en un show de clown?"
+    options:
+      - "Traje formal"
+      - "Nariz roja y ropa colorida"
+      - "Ropa casual"
+    answer: "Nariz roja y ropa colorida"
+
+  - question: "¿Qué tipo de ejercicios son recomendados para calentar antes de un show de clown?"
+    options:
+      - "Ejercicios de fuerza"
+      - "Juegos de improvisación y expresión corporal"
+      - "Meditación silenciosa"
+    answer: "Juegos de improvisación y expresión corporal"
+
+  - question: "¿Cuál es una buena manera de interactuar con el público durante un show de clown?"
+    options:
+      - "Ignorar a la audiencia"
+      - "Invitar a los asistentes a participar en actividades y juegos"
+      - "Hablar de manera monótona"
+    answer: "Invitar a los asistentes a participar en actividades y juegos"
+
+  - question: "¿Cómo se debe manejar la risa en un show de clown?"
+    options:
+      - "Forzar la risa en cada momento"
+      - "Permitir que la risa surja de situaciones espontáneas"
+      - "Evitar la risa por completo"
+    answer: "Permitir que la risa surja de situaciones espontáneas"
+
+  - question: "¿Qué papel juega la narración de historias en un show de clown?"
+    options:
+      - "Es opcional y no suele ser efectiva"
+      - "Es fundamental y se puede hacer de forma exagerada y divertida"
+      - "Debe ser seria y formal"
+    answer: "Es fundamental y se puede hacer de forma exagerada y divertida"
+
+  - question: "¿Cuál es una buena forma de finalizar un show de clown?"
+    options:
+      - "Simplemente salir del escenario"
+      - "Culminar con un pequeño acto o sketch que resuma la experiencia"
+      - "Pedir disculpas al público"
+    answer: "Culminar con un pequeño acto o sketch que resuma la experiencia"
+
 ---
 
 ## Introducción

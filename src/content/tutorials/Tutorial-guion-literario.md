@@ -6,6 +6,56 @@ category: "Literatura"
 tags: ["Escritura", "principiantes", "historias", "tutorial", "cuentos"]
 image: "/images/guitarra-principiantes.jpg"
 description: "En este tutorial, aprenderas la estructura de elaboración de un guión literario, a como desarrollar las ideas y "
+quiz:
+  - question: "¿Cuál es el primer paso al desarrollar un guion literario?"
+    options:
+      - "Escribir los diálogos"
+      - "Desarrollar una idea original"
+      - "Elaborar una escaleta"
+    answer: "Desarrollar una idea original"
+    
+  - question: "¿Qué debe incluir una sinopsis argumental?"
+    options:
+      - "Detalles técnicos de la filmación"
+      - "Los conflictos secundarios"
+      - "El conflicto principal y personajes clave"
+    answer: "El conflicto principal y personajes clave"
+    
+  - question: "¿Qué se hace en la escaleta?"
+    options:
+      - "Dividir la historia en secuencias o escenas numeradas"
+      - "Describir los movimientos de cámara"
+      - "Escribir los diálogos"
+    answer: "Dividir la historia en secuencias o escenas numeradas"
+    
+  - question: "¿Qué aspecto es clave al escribir los diálogos?"
+    options:
+      - "Que suenen naturales y revelen información sobre la trama y los personajes"
+      - "Que sean breves y ambiguos"
+      - "Que incluyan detalles técnicos"
+    answer: "Que suenen naturales y revelen información sobre la trama y los personajes"
+    
+  - question: "¿Qué se debe hacer al describir las acciones en un guion literario?"
+    options:
+      - "Incluir ángulos de cámara"
+      - "Usar un lenguaje cinematográfico para narrar acciones y describir escenarios"
+      - "Evitar descripciones visuales"
+    answer: "Usar un lenguaje cinematográfico para narrar acciones y describir escenarios"
+    
+  - question: "¿Cuál es el formato estándar para un guion literario?"
+    options:
+      - "Tipografía Times New Roman 12, centrado, primera persona"
+      - "Tipografía Courier 12, presente, tercera persona"
+      - "Tipografía Arial 10, pasado, segunda persona"
+    answer: "Tipografía Courier 12, presente, tercera persona"
+    
+  - question: "¿Qué es importante hacer después de escribir el guion literario?"
+    options:
+      - "Publicarlo inmediatamente"
+      - "Revisar y reescribir"
+      - "Incluir efectos de sonido"
+    answer: "Revisar y reescribir"
+
 ---
 
 ## Introducción
