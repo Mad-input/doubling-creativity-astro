@@ -4,7 +4,7 @@ author: ""
 publishDate: "2024-08-18"
 category: "Habilidades Blandas"
 tags: ["oralidad", "publico", "presentacion", ""]
-image: "/images/guitarra-principiantes.jpg"
+image: "/img/tutorials/Presentacion-tutorial.webp"
 description: "En este tutoriaal, aprenderaz a como ser un maestro de la imitacion, ya sea como un hobbie o para entretaner al publico"
 quiz:
   - question: "¿Cuál es un elemento fundamental para transmitir confianza al hablar en público?"

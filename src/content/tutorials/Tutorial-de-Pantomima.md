@@ -4,7 +4,7 @@ author: ""
 publishDate: "2024-08-18"
 category: "Artes escenicas"
 tags: ["mimos", "principiantes", "actuación", "tutorial"]
-image: "/images/guitarra-principiantes.jpg"
+image: "/img/tutorials/Tutorial-pantomimica.webp"
 description: "En este tutorial, aprenderaz a como ser un maestro de la imitacion, ya sea como un hobbie o para entretaner al publico.
 Aprenderas desde los fundamentos, vesturio y rutinas que te volveran un gran actor."
 quiz:

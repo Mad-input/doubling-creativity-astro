@@ -4,7 +4,7 @@ author: "Gentleman´s"
 publishDate: "2024-08-18"
 category: "Moda y Estilo"
 tags: ["moda", "vestimenta", "tips", "tutorial"]
-image: "/images/guitarra-principiantes.jpg"
+image: "/img/tutorials/Presentacion-Personal.webp"
 description: "Este tutorial te ayudara a seguir pasos basicos sobre como combinar tus prendas favoritas y vestirte para cualquier ocasión. "
 quiz:
   - question: "¿Qué aspecto es crucial para una buena apariencia personal?"
