@@ -4,7 +4,7 @@ author: ""
 publishDate: "2024-08-18"
 category: "Artes Escenicas"
 tags: ["payasos", "animación", "fiesta", "tutorial"]
-image: "/images/guitarra-principiantes.jpg"
+image: "/img/tutorials/Tutorial-clown.webp"
 description: "Este tutorial te ayudara a hacer actividades de clown para tus fiestas y eventos"
 quiz:
   - question: "¿Qué elemento de vestimenta puede ayudar a romper el hielo en un show de clown?"

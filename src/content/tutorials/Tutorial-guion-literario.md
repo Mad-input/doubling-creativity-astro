@@ -4,7 +4,7 @@ author: ""
 publishDate: "2024-08-18"
 category: "Literatura"
 tags: ["Escritura", "principiantes", "historias", "tutorial", "cuentos"]
-image: "/images/guitarra-principiantes.jpg"
+image: "/img/tutorials/Tutorial-guion.webp"
 description: "En este tutorial, aprenderas la estructura de elaboración de un guión literario, a como desarrollar las ideas y "
 quiz:
   - question: "¿Cuál es el primer paso al desarrollar un guion literario?"
