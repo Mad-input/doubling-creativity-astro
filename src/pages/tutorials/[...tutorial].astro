@@ -34,6 +34,8 @@ const { quiz } = entry.data;
     padding: 30px 35px;
     margin-block: var(--margin-between);
     margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
 
     .title {
       text-align: center;
@@ -80,6 +82,13 @@ const { quiz } = entry.data;
         font-size: 1.125rem;
         color: #281b39;
       }
+    }
+
+    iframe {
+      width: 100% !important;
+      max-width: 800px;
+      height: 400px;
+      align-self: center;
     }
   }
 </style>
