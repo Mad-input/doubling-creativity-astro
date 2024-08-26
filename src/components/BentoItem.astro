@@ -3,12 +3,17 @@ interface Props {
   title: String;
   description: String;
   idImage: String;
+  slug: string;
 }
 
-const { title, description, idImage } = Astro.props;
+const { title, description, idImage, slug } = Astro.props;
 ---
 
-<a style=`--bg: url(${idImage});` class="bento-item" href="#">
+<a
+  style=`--bg: url(${idImage});`
+  class="bento-item"
+  href={`/tutorials/${slug}`}
+>
   <h1 class="title-bento-item">{title}</h1>
   <p class="description-bento-item">{description}</p>
 </a>
