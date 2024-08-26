@@ -60,16 +60,16 @@ La presentación personal se refiere a la forma en que una persona se presenta a
 
 - **Cuidado de la apariencia**: Mantén una higiene adecuada y elige vestimenta que se adapte a la ocasión. Esto incluye cuidar tu peinado, usar ropa limpia y planchada, y prestar atención a los detalles como el calzado y los accesorios. 
 
-https://www.youtube.com/watch?v=JOLMAhC1JrA
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JOLMAhC1JrA?si=flHkMTkzZsmFOyU8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 - **Comunicación efectiva**: Mejora tus habilidades de comunicación verbal y no verbal. Practica el contacto visual, la postura abierta y el uso de gestos apropiados. Asegúrate de que tu tono de voz sea claro y amigable, lo que ayudará a transmitir confianza. 
 
-https://www.youtube.com/watch?v=s08VD2PeqQI
+<iframe width="560" height="315" src="https://www.youtube.com/embed/s08VD2PeqQI?si=xZdscJbake2N1aH5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 - **Preparación para situaciones específicas**: En contextos como entrevistas de trabajo, prepara una breve presentación sobre ti mismo que incluya tu nombre, experiencia y habilidades relevantes. Practica esto para que suene natural y fluido.
 Ahora hablando de tu vestuario debemos tener en cuenta factores como lo son el tipo de etiqueta que se maneje (formal, casual, informal, etc.) ademas de ciertos aspectos que puden pareces minusculos pero que hacen la diferencia como pueden ser los accesorios.
 
-https://www.youtube.com/watch?v=CJzj8W-UymA
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CJzj8W-UymA?si=2e-PBN0ZVtgAAC8D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 #### No todo es la vestimenta.
@@ -79,12 +79,11 @@ Cuando debemos asistir a una reunión o evento, puede que tengamos una vestiment
 
 - **Desarrollo de habilidades sociales**: Participa en actividades que te permitan interactuar con diferentes personas. Esto puede incluir grupos de networking, talleres o eventos comunitarios. Cuanto más practiques, más cómodo te sentirás al presentarte ante otros. 
 
-https://www.youtube.com/watch?v=RsrNLM3DTxY
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RsrNLM3DTxY?si=H9b3C4R9KuOCoNVw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 - **Actitud positiva**: Mantén una actitud abierta y positiva. La forma en que te sientes contigo mismo se reflejará en cómo te presentas a los demás. La confianza en ti mismo es clave para una buena presentación personal. 
 
-https://www.youtube.com/watch?v=4yvCn2z9k2E
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4yvCn2z9k2E?si=WQTUre0vE7UwP0An" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ---
 
-¡Esperamos que este tutorial te haya ayudado a expandir tu visión sobre como vestirte!, Aqui te dejamos un pequeño quiz para que pongas a prueba lo aprendido.
+¡Esperamos que este tutorial te haya ayudado a expandir tu visión sobre como vestirte y verte bien!, Aqui te dejamos un pequeño quiz para que pongas a prueba lo aprendido¡.
