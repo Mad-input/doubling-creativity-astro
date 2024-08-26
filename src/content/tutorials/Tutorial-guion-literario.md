@@ -5,7 +5,7 @@ publishDate: "2024-08-18"
 category: "Literatura"
 tags: ["Escritura", "principiantes", "historias", "tutorial", "cuentos"]
 image: "/img/tutorials/Tutorial-guion.webp"
-description: "En este tutorial, aprenderas la estructura de elaboración de un guión literario, a como desarrollar las ideas y "
+description: "En este tutorial, aprenderas la estructura de elaboración de un guión literario, a como desarrollar las ideas y crear los personajes ideales para tu historia."
 quiz:
   - question: "¿Cuál es el primer paso al desarrollar un guion literario?"
     options:
@@ -100,4 +100,4 @@ Un guion literario es un documento escrito que narra una historia destinada a se
 
 ---
 
-¡Esperamos que este tutorial te haya ayudado a aprender los concepos de como crear un guión literario! Aqui te dejamos un pequeño quiz para que pongas a prueba lo aprendido.
+¡Esperamos que este tutorial te haya ayudado a aprender los conceptos de como crear un guión literario! Aqui te dejamos un pequeño quiz para que pongas a prueba lo aprendido.
