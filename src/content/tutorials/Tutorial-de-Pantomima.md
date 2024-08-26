@@ -63,7 +63,7 @@ La pantomima es un arte escénico que se centra en la representación de histori
 - **Utiliza gestos claros**: Cada gesto debe ser exagerado y claro para que el público pueda entender el mensaje. Por ejemplo, si simulas que llevas algo pesado, tu postura y movimientos deben reflejar el esfuerzo.
 - **Incorpora el espacio**: Aprende a utilizar el espacio a tu alrededor. Mueve tu cuerpo de manera que interactúe con el entorno imaginario que estás creando.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/n_PTstATHa8?si=t-KJ16-e5eBhCrKK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Pl8U7TYyvt0?si=-2dhpKwHCo9PBdX2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   
 #### 2. Objetos Imaginarios
 
