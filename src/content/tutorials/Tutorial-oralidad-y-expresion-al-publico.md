@@ -3,7 +3,7 @@ title: "Tutorial de expresion y oralidad al publico: Desata tu potencial como pr
 author: ""
 publishDate: "2024-08-18"
 category: "Habilidades Blandas"
-tags: ["oralidad", "publico", "presentacion", ""]
+tags: ["oralidad", "publico", "presentacion"]
 image: "/img/tutorials/Presentacion-tutorial.webp"
 description: "En este tutoriaal, aprenderaz a como ser un maestro de la imitacion, ya sea como un hobbie o para entretaner al publico"
 quiz:
