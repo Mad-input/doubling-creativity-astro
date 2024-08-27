@@ -53,16 +53,16 @@ quiz:
 
 ## Introducción
 
-La presentación personal se refiere a la forma en que una persona se presenta ante los demás, abarcando aspectos como la apariencia física, la comunicación verbal y no verbal, y la manera de interactuar. Es crucial en diversas situaciones, como entrevistas de trabajo, reuniones sociales o eventos profesionales, ya que la primera impresión puede influir en la percepción que otros tienen de nosotros. 
+La presentación personal se refiere a la forma en que una persona se presenta ante los demás, abarcando aspectos como la apariencia física, la comunicación verbal y no verbal, y la manera de interactuar. Es crucial en diversas situaciones, como entrevistas de trabajo, reuniones sociales o eventos profesionales, ya que la primera impresión puede influir en la percepción que otros tienen de nosotros.
 
 #### ¿Que debo tener en cuenta?.
 
 
-- **Cuidado de la apariencia**: Mantén una higiene adecuada y elige vestimenta que se adapte a la ocasión. Esto incluye cuidar tu peinado, usar ropa limpia y planchada, y prestar atención a los detalles como el calzado y los accesorios. 
+- **Cuidado de la apariencia**: Mantén una higiene adecuada y elige vestimenta que se adapte a la ocasión. Esto incluye cuidar tu peinado, usar ropa limpia y planchada, y prestar atención a los detalles como el calzado y los accesorios.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JOLMAhC1JrA?si=flHkMTkzZsmFOyU8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-- **Comunicación efectiva**: Mejora tus habilidades de comunicación verbal y no verbal. Practica el contacto visual, la postura abierta y el uso de gestos apropiados. Asegúrate de que tu tono de voz sea claro y amigable, lo que ayudará a transmitir confianza. 
+- **Comunicación efectiva**: Mejora tus habilidades de comunicación verbal y no verbal. Practica el contacto visual, la postura abierta y el uso de gestos apropiados. Asegúrate de que tu tono de voz sea claro y amigable, lo que ayudará a transmitir confianza.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/s08VD2PeqQI?si=xZdscJbake2N1aH5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -77,13 +77,14 @@ Ahora hablando de tu vestuario debemos tener en cuenta factores como lo son el t
 Cuando debemos asistir a una reunión o evento, puede que tengamos una vestimenta bastante elaborada, dando un buen aspecto sobre nosotros; aunque eso sea bastante positivo, nuestras expresión, comportamiento y la forma en la que nos comportamos en el entorno da mucho mas que hablar que una vestimenta.
 
 
-- **Desarrollo de habilidades sociales**: Participa en actividades que te permitan interactuar con diferentes personas. Esto puede incluir grupos de networking, talleres o eventos comunitarios. Cuanto más practiques, más cómodo te sentirás al presentarte ante otros. 
+- **Desarrollo de habilidades sociales**: Participa en actividades que te permitan interactuar con diferentes personas. Esto puede incluir grupos de networking, talleres o eventos comunitarios. Cuanto más practiques, más cómodo te sentirás al presentarte ante otros.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RsrNLM3DTxY?si=H9b3C4R9KuOCoNVw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-- **Actitud positiva**: Mantén una actitud abierta y positiva. La forma en que te sientes contigo mismo se reflejará en cómo te presentas a los demás. La confianza en ti mismo es clave para una buena presentación personal. 
+- **Actitud positiva**: Mantén una actitud abierta y positiva. La forma en que te sientes contigo mismo se reflejará en cómo te presentas a los demás. La confianza en ti mismo es clave para una buena presentación personal.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4yvCn2z9k2E?si=WQTUre0vE7UwP0An" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ---
 
 ¡Esperamos que este tutorial te haya ayudado a expandir tu visión sobre como vestirte y verte bien!, Aqui te dejamos un pequeño quiz para que pongas a prueba lo aprendido¡.

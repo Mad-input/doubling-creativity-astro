@@ -61,8 +61,6 @@ quiz:
 
 En un mundo cada vez más consciente del impacto ambiental, el reciclaje se ha convertido en una práctica fundamental para reducir nuestros residuos y fomentar la sostenibilidad. Dos formas creativas y ecológicas de contribuir a este esfuerzo son reciclar lienzos y hacer papel reciclado. Estos procesos no solo ayudan a disminuir la cantidad de desechos que generamos, sino que también permiten explorar nuevas formas de expresión artística y funcionalidad en nuestros proyectos.
 
-<img src="/img/tutorials/tutorial-reciclaje.jpg" alt="imagen tutorial">
-
 ### Reciclar lienzos
  es una excelente manera de dar nueva vida a materiales artísticos que, de otro modo, podrían ser desechados. Al reutilizar lienzos viejos, podemos ahorrar recursos, reducir la demanda de nuevos materiales y fomentar la creatividad. Este proceso generalmente implica la eliminación de la pintura anterior y la preparación del lienzo para una nueva obra, lo que puede ser una experiencia enriquecedora tanto para artistas experimentados como para aficionados.
 
