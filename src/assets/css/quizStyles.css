@@ -81,6 +81,13 @@
   }
 }
 
+.noAuthenticated {
+  color: #9a86a4;
+  text-align: center;
+  text-transform: uppercase;
+  margin-block: 20px;
+}
+
 @media screen and (width < 1100px) {
   .quiz {
     flex-direction: column;

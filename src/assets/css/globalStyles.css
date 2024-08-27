@@ -15,15 +15,11 @@
   cursor: pointer;
   position: relative;
 
-  img {
-    width: 20px;
-    vertical-align: top;
-    rotate: 180deg;
-    transition: .3s ease;
-
-    &.rotate {
-      rotate: 0deg;
-    }
+  .user-image {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    margin-right: 5px;
   }
 
   .option-list-user {
@@ -169,6 +165,12 @@
   &:focus {
     outline: 2px solid #9a86a4;
   }
+}
+
+.noAuthenticated {
+  color: #9a86a4;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 @media screen and (width < 1100px) {
