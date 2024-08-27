@@ -21,9 +21,12 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-hook-form": "^7.52.2",
-    "typewriter-effect": "^2.21.0"
+    "react-lite-yt-embed": "^1.2.7",
+    "typewriter-effect": "^2.21.0",
+    "zustand": "^4.5.5"
   },
   "devDependencies": {
+    "react-router-dom": "^6.26.1",
     "standard": "^17.1.0"
   },
   "eslintConfig": {

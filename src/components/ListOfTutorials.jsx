@@ -1,6 +1,7 @@
 import CardTutorial from "./CardTutorial.tsx";
 import '../assets/css/globalStyles.css'
 import { useEffect, useState } from "react";
+import userStorage from '../store/userStore.js'
 
 // Función debounce para retrasar la ejecución del filtro
 function debounce(func, delay) {
@@ -18,6 +19,7 @@ function debounce(func, delay) {
 export default function ListOfTutorials({ tutorials }) {
   const [value, setValue] = useState("")
   const [showTutorials, setShowTutorials] = useState(tutorials)
+  const { isAuthenticated } = userStorage()
 
   const handleChange = (e) => {
     setValue(e.target.value)
@@ -39,27 +41,30 @@ export default function ListOfTutorials({ tutorials }) {
     }
   }, [value]);
   return (
-    <>
-      <input type="text" className="input-search" onChange={handleChange} value={value} placeholder="What do you want to learn?" />
-      <section className="list-of-tutorials">
-        {!showTutorials.length
-          ?
-          <h1>no results found</h1>
-          :
-          showTutorials.map(({ slug, data: { title, description, image, category, tags } }) => (
-            <CardTutorial
-              key={slug}
-              title={title}
-              description={description}
-              image={image}
-              link={`/tutorials/${slug}`}
-              category={category}
-              tags={tags}
-            />
-          ),
-          )
-        }
-      </section>
-    </>
+    isAuthenticated
+      ?
+      <>
+        <input type="text" className="input-search" onChange={handleChange} value={value} placeholder="What do you want to learn?" />
+        <section className="list-of-tutorials">
+          {!showTutorials.length
+            ?
+            <h1>no results found</h1>
+            :
+            showTutorials.map(({ slug, data: { title, description, image, category, tags } }) => (
+              <CardTutorial
+                key={slug}
+                title={title}
+                description={description}
+                image={image}
+                link={`/tutorials/${slug}`}
+                category={category}
+                tags={tags}
+              />
+            ),
+            )
+          }
+        </section>
+      </>
+      : <h1 className="noAuthenticated">access or register to access all our content</h1>
   )
 }

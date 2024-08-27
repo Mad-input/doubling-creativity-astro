@@ -2,7 +2,9 @@ import { useForm } from 'react-hook-form'
 import TagError from './TagError.jsx'
 import '../assets/css/stylesFormLogin.css'
 import { useEffect, useState } from 'react'
-import { registerUser } from '../api/auth.js'
+import userStore from '../store/userStore.js';
+
+const MAX_FILE_SIZE = 2 * 1024 * 1024;
 
 export default function FormRegister() {
   const {
@@ -15,7 +17,67 @@ export default function FormRegister() {
     }
   } = useForm()
 
-  const [error, setError] = useState('')
+  const { signUp, error, setError } = userStore()
+
+  const [loading, setLoading] = useState('')
+  const [userImage, setUserImage] = useState('')
+
+  const resizeImage = (file) => {
+    return new Promise((resolve) => {
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        const img = new Image();
+        img.onload = () => {
+          const canvas = document.createElement('canvas');
+          const maxWidth = 300; // Ancho máximo deseado
+          const maxHeight = 300; // Alto máximo deseado
+
+          let width = img.width;
+          let height = img.height;
+
+          // Mantener la relación de aspecto
+          if (width > height) {
+            if (width > maxWidth) {
+              height *= maxWidth / width;
+              width = maxWidth;
+            }
+          } else {
+            if (height > maxHeight) {
+              width *= maxHeight / height;
+              height = maxHeight;
+            }
+          }
+
+          canvas.width = width;
+          canvas.height = height;
+          const ctx = canvas.getContext('2d');
+          ctx.drawImage(img, 0, 0, width, height);
+
+          // Convertir la imagen redimensionada a base64
+          resolve(canvas.toDataURL(file.type));
+        };
+        img.src = event.target.result;
+      };
+      reader.readAsDataURL(file);
+    });
+  };
+
+  const handleImageChange = async (e) => {
+    const file = e.target.files[0];
+
+    // Verifica el tamaño del archivo
+    if (file && file.size > MAX_FILE_SIZE) {
+      setError('El tamaño de la imagen es demasiado grande. El máximo es 2MB.');
+      return;
+    } else {
+      setError('');
+    }
+
+    if (file) {
+      const resizedImage = await resizeImage(file)
+      setUserImage(resizedImage)
+    }
+  };
 
   const optionsUsername = {
     required: {
@@ -64,12 +126,14 @@ export default function FormRegister() {
 
 
   const onSubmit = handleSubmit(async (values) => {
-    const { username, email, password } = values
-
+    setLoading(true)
     try {
-      const data = await registerUser({ name: username, email, password })
+      await signUp({ ...values, userImage })
     } catch (error) {
-      setError(error.response.data.error)
+      setError(error)
+      setLoading(false)
+    } finally {
+      setLoading(false)
     }
     reset()
     window.location.replace('/')
@@ -78,7 +142,7 @@ export default function FormRegister() {
   useEffect(() => {
     setTimeout(() => {
       setError('')
-    }, 2000);
+    }, 5000);
   }, [error])
 
   return (
@@ -87,7 +151,9 @@ export default function FormRegister() {
       <div className="logo">
         <a href="/"><img src="/img/logo-icon.svg" alt="logo" /></a>
       </div>
-      {error && <TagError text={error}></TagError>}
+      <p className='text-register'>Create an account and access all our content</p>
+      {loading && <span className='loader'></span>}
+      {error && <TagError text={error} />}
       <div className="containt-input">
         <input
           className={`${errors.username ? 'error' : 'ok'}`}
@@ -129,7 +195,19 @@ export default function FormRegister() {
         <label>Confirm Password</label>
         {errors.confirmPassword && <TagError text={errors.confirmPassword.message} />}
       </div>
-      <button type="submit" className="btn-submit">Register</button>
+      <div className="image-user-cotainer">
+        <label>
+          <span>Select a profile image</span>
+          <input type="file" accept='img/*' className='input-file-user' onChange={handleImageChange} />
+          <div className="preview-image">
+            <img src={userImage} />
+          </div>
+        </label>
+      </div>
+      <div className="options-btns">
+        <a href="#">I already have an account</a>
+        <button type="submit" className="btn-submit btn-register" disabled={loading ? true : false} >Sign Up</button>
+      </div>
     </form>
   )
 }

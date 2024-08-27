@@ -1,25 +1,28 @@
 import { useForm } from "react-hook-form"
 import '../assets/css/stylesFormLogin.css'
 import TagError from './TagError'
-import { loginUser } from "../api/auth"
 import { useState } from "react"
+import userStore from '../store/userStore.js'
 
 export default function FormLogin() {
-  const [error, setError] = useState(null)
+  const [loading, setLoading] = useState(false)
   const {
     register,
     handleSubmit,
     formState: { errors }
   } = useForm()
 
+  const { login, error, showModalLogin, setShowModalLogin } = userStore()
+
   const onSubmit = handleSubmit(async (values) => {
     try {
-      const response = await loginUser(values)
-      localStorage.setItem('user', JSON.stringify(response.data))
-      window.location.reload()
+      setLoading(true)
+      await login(values)
+      setShowModalLogin()
     } catch (e) {
-      setError(e.response.data.error)
-
+      setLoading(false)
+    } finally {
+      setLoading(false)
     }
   })
 
@@ -42,9 +45,9 @@ export default function FormLogin() {
   }
 
   return (
-    <dialog className="dialog-modal">
+    <dialog className={`dialog-modal ${showModalLogin ? 'show' : ''}`}>
       <form id="form" onSubmit={onSubmit}>
-        <button className="btn-close-modal" type="button">
+        <button className="btn-close-modal" type="button" onClick={setShowModalLogin}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width='24'
@@ -62,6 +65,8 @@ export default function FormLogin() {
         <div className="logo">
           <a href="/"><img src="/img/logo-icon.svg" alt="logo" /></a>
         </div>
+        {/* Mostrar error y loader */}
+        {loading && <span className="loader"></span>}
         {error && <TagError text={error}></TagError>}
         <div className="containt-input">
           <input
@@ -84,7 +89,7 @@ export default function FormLogin() {
           {errors.password && <TagError text={errors.password.message} />}
         </div>
 
-        <button type="submit" className="btn-submit">Login</button>
+        <button type="submit" className="btn-submit" disabled={loading ? true : false} >Login</button>
       </form>
     </dialog>
   )

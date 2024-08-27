@@ -1,20 +1,15 @@
 import { useEffect, useState } from "react"
 import '../assets/css/stylesNavbar.css'
+import userStore from '../store/userStore.js'
 
 export default function NavbarMobile() {
   const [isMobile, setIsmobile] = useState(false)
-  const [isAuthenticated, setIsAuthenticated] = useState(false)
+  const { isAuthenticated, setShowModalLogin } = userStore()
 
 
   useEffect(() => {
     const handleResize = () => {
       setIsmobile(window.innerWidth < 1100)
-    }
-    const data = localStorage.getItem('user')
-    if (data) {
-      setIsAuthenticated(true);  // Establecer autenticado en true
-    } else {
-      setIsAuthenticated(false); // Si no hay data, es false
     }
 
     window.addEventListener('resize', handleResize)
@@ -25,10 +20,6 @@ export default function NavbarMobile() {
   }, [])
   const handleNavbar = (e) => {
     e.target.parentElement.classList.remove("show")
-  }
-  const handleDialog = () => {
-    const modal = document.querySelector('.dialog-modal')
-    modal.style.display = 'flex'
   }
 
   return (
@@ -59,7 +50,7 @@ export default function NavbarMobile() {
         !isAuthenticated &&
         <div className="buttons-s-i">
           <a href="/register" rel="noopener noreferrer" className="btn s">Sing up</a>
-          <button className="btn i" id="btnShowModal" onClick={handleDialog}>Log In</button>
+          <button className="btn i" id="btnShowModal" onClick={setShowModalLogin}>Log In</button>
         </div>
       }
     </nav>

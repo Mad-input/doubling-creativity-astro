@@ -1,8 +1,10 @@
+import userStore from '../store/userStore.js'
 import { useEffect } from "react";
 import TutorialQuiz from "../assets/js/Quiz.js";
 import '../assets/css/quizStyles.css'
 
 export default function QuizComponent({ questions }) {
+  const { isAuthenticated } = userStore()
 
   useEffect(() => {
     const options = {
@@ -22,24 +24,29 @@ export default function QuizComponent({ questions }) {
       },
     };
 
-    const QuizT = new TutorialQuiz(questions, options);
-    QuizT.init();
-  }, [])
+    if (isAuthenticated) {
+      const QuizT = new TutorialQuiz(questions, options);
+      QuizT.init();
+    }
+  }, [isAuthenticated])
   return (
 
-    <div className="quiz">
-      <header>
-        <h2 className="quiz-title">Quiz</h2>
-        <ul className="indicators"></ul>
-      </header>
-      <div className="question-container">
-        <div className="loader-container">
-          <div className="loader"></div>
-          <span>Cargando...</span>
+    isAuthenticated
+      ?
+      <div className="quiz">
+        <header>
+          <h2 className="quiz-title">Quiz</h2>
+          <ul className="indicators"></ul>
+        </header>
+        <div className="question-container">
+          <div className="loader-container">
+            <div className="loader"></div>
+            <span>Cargando...</span>
+          </div>
         </div>
+        <small className="progress"></small>
       </div>
-      <small className="progress"></small>
-    </div>
+      : <h1 className="noAuthenticated">access or register to access all our content</h1>
 
   )
 }
