@@ -13,6 +13,7 @@
       --size: 200px;
       width: var(--size);
       height: var(--size);
+      object-fit: cover;
       border-radius: 100%;
     }
 
