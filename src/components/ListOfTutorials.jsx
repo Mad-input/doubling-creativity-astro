@@ -44,7 +44,7 @@ export default function ListOfTutorials({ tutorials }) {
     isAuthenticated
       ?
       <>
-        <input type="text" className="input-search" onChange={handleChange} value={value} placeholder="What do you want to learn?" />
+        <input type="text" className="input-search" onChange={handleChange} value={value} placeholder="¿Que Quieres Aprender Hoy?" />
         <section className="list-of-tutorials">
           {!showTutorials.length
             ?
@@ -65,6 +65,6 @@ export default function ListOfTutorials({ tutorials }) {
           }
         </section>
       </>
-      : <h1 className="noAuthenticated">access or register to access all our content</h1>
+      : <h1 className="noAuthenticated">Accede Para Ver Todo el Contenido</h1>
   )
 }

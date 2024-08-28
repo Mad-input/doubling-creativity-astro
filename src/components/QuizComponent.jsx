@@ -46,7 +46,7 @@ export default function QuizComponent({ questions }) {
         </div>
         <small className="progress"></small>
       </div>
-      : <h1 className="noAuthenticated">access or register to access all our content</h1>
+      : <h1 className="noAuthenticated">Accede Para Ver Todo el Contenido</h1>
 
   )
 }

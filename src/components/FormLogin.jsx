@@ -29,18 +29,18 @@ export default function FormLogin() {
   const optionsEmail = {
     required: {
       value: true,
-      message: "Email is required",
+      message: "Requiere una dirección de correo",
     },
     pattern: {
       value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
-      message: 'invalid email'
+      message: 'Correo Invalido'
     }
   }
 
   const optionsPassword = {
     required: {
       value: true,
-      message: "password is required"
+      message: "Requiere Contraseña"
     }
   }
 
@@ -61,7 +61,7 @@ export default function FormLogin() {
           ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M18 6l-12 12"></path><path d="M6 6l12 12"></path>
           </svg>
         </button>
-        <h2 className="title-form">Log in</h2>
+        <h2 className="title-form">Iniciar Sesión</h2>
         <div className="logo">
           <a href="/"><img src="/img/logo-icon.svg" alt="logo" /></a>
         </div>
@@ -75,7 +75,7 @@ export default function FormLogin() {
             placeholder=""
             {...register("email", optionsEmail)}
             autoComplete='off' />
-          <label>Email</label>
+          <label>Correo</label>
           {errors.email && <TagError text={errors.email.message} />}
         </div>
         <div className="containt-input">
@@ -85,11 +85,11 @@ export default function FormLogin() {
             placeholder=""
             {...register("password", optionsPassword)}
             autoComplete='off' />
-          <label>Password</label>
+          <label>Contraseña</label>
           {errors.password && <TagError text={errors.password.message} />}
         </div>
 
-        <button type="submit" className="btn-submit" disabled={loading ? true : false} >Login</button>
+        <button type="submit" className="btn-submit" disabled={loading ? true : false} >Iniciar Sesión</button>
       </form>
     </dialog>
   )
