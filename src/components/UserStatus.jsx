@@ -9,9 +9,9 @@ export default function UserStatus() {
       ?
       <div className="buttons-s-i">
         <button className="btn s">
-          <a href="/register" rel="noopener noreferrer">Sign up</a>
+          <a href="/register" rel="noopener noreferrer">Unirse</a>
         </button>
-        <button className="btn i" onClick={setShowModalLogin}>LogIn</button>
+        <button className="btn i" onClick={setShowModalLogin}>Iniciar Sesión</button>
       </div>
       :
       <TagUser></TagUser>

@@ -17,8 +17,8 @@ export default function TagUser() {
         {
           showOptions &&
           <ul className='option-list-user'>
-            <li className='profile-link'><a href="/profile">Profile</a></li>
-            <li className='logout-link' onClick={logout}>Logout</li>
+            <li className='profile-link'><a href="/profile">Perfil</a></li>
+            <li className='logout-link' onClick={logout}>Cerrar Sesión</li>
           </ul>
         }
       </button>

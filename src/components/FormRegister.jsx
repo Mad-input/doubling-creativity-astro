@@ -82,46 +82,46 @@ export default function FormRegister() {
   const optionsUsername = {
     required: {
       value: true,
-      message: "name is required"
+      message: "Requiere un Nombre"
     },
     minLength: {
       value: 3,
-      message: "minimum trhee characters"
+      message: "Minimo 3 Caracteres"
     },
     maxLength: {
       value: 20,
-      message: "maximum twenty characters"
+      message: "Maximo 20 Caracteres"
     }
   }
 
   const optionsEmail = {
     required: {
       value: true,
-      message: "Email is required",
+      message: "Requiere una Dirección de Correo Valida",
     },
     pattern: {
       value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
-      message: 'invalid email'
+      message: 'Correo Invalido'
     }
   }
 
   const optionsPassword = {
     required: {
       value: true,
-      message: "password is required"
+      message: "Requiere una Contraseña"
     },
     minLength: {
       value: 6,
-      message: "must be a minimum of six"
+      message: "Debe Contener Un Minimo de Seis"
     }
   }
 
   const optionsConfirmPassword = {
     required: {
       value: true,
-      message: "password is required"
+      message: "Requiere una Contraseña"
     },
-    validate: (value) => value === watch('password') ? true : 'passwords do not match'
+    validate: (value) => value === watch('password') ? true : 'Contraseñas no Coinsiden'
   }
 
 
@@ -147,11 +147,11 @@ export default function FormRegister() {
 
   return (
     <form id="form" onSubmit={onSubmit}>
-      <h2 className="title-form">Sign Up</h2>
+      <h2 className="title-form">Unirse</h2>
       <div className="logo">
         <a href="/"><img src="/img/logo-icon.svg" alt="logo" /></a>
       </div>
-      <p className='text-register'>Create an account and access all our content</p>
+      <p className='text-register'>Crea Una Cuenta Para Acceder a Todo el Contenido</p>
       {loading && <span className='loader'></span>}
       {error && <TagError text={error} />}
       <div className="containt-input">
@@ -162,7 +162,7 @@ export default function FormRegister() {
           autoFocus
           {...register("username", optionsUsername)}
           autoComplete='off' />
-        <label>Username</label>
+        <label>Nombre de Usuario</label>
         {errors.username && <TagError text={errors.username.message} />}
       </div>
       <div className="containt-input">
@@ -172,7 +172,7 @@ export default function FormRegister() {
           placeholder=""
           {...register("email", optionsEmail)}
           autoComplete='off' />
-        <label>Email</label>
+        <label>Correo</label>
         {errors.email && <TagError text={errors.email.message} />}
       </div>
       <div className="containt-input">
@@ -182,7 +182,7 @@ export default function FormRegister() {
           placeholder=""
           {...register("password", optionsPassword)}
           autoComplete='off' />
-        <label>Password</label>
+        <label>Contraseña</label>
         {errors.password && <TagError text={errors.password.message} />}
       </div>
       <div className="containt-input">
@@ -192,12 +192,12 @@ export default function FormRegister() {
           placeholder=""
           {...register("confirmPassword", optionsConfirmPassword)}
           autoComplete='off' />
-        <label>Confirm Password</label>
+        <label>Confirmar Contraseña</label>
         {errors.confirmPassword && <TagError text={errors.confirmPassword.message} />}
       </div>
       <div className="image-user-cotainer">
         <label>
-          <span>Select a profile image</span>
+          <span>Seleccione una Imagen de Perfil</span>
           <input type="file" accept='img/*' className='input-file-user' onChange={handleImageChange} />
           <div className="preview-image">
             <img src={userImage} />
@@ -205,7 +205,7 @@ export default function FormRegister() {
         </label>
       </div>
       <div className="options-btns">
-        <a href="#">I already have an account</a>
+        <a href="#">Ya Tengo una Cuenta</a>
         <button type="submit" className="btn-submit btn-register" disabled={loading ? true : false} >Sign Up</button>
       </div>
     </form>

@@ -41,16 +41,16 @@ export default function NavbarMobile() {
         </svg>
       </button>
       <ul className="list-navbar">
-        <li className="list-item"><a href="/">Home</a></li>
-        <li className="list-item"><a href="/tutorials">Tutorials</a></li>
-        <li className="list-item"><a href="/about">About Us</a></li>
-        <li className="list-item"><a href="/articles">Articles</a></li>
+        <li className="list-item"><a href="/">Inicio</a></li>
+        <li className="list-item"><a href="/tutorials">Tutoriales</a></li>
+        <li className="list-item"><a href="/about">Sobre Nosotros</a></li>
+        <li className="list-item"><a href="/articles">Articulos</a></li>
       </ul>
       {
         !isAuthenticated &&
         <div className="buttons-s-i">
-          <a href="/register" rel="noopener noreferrer" className="btn s">Sing up</a>
-          <button className="btn i" id="btnShowModal" onClick={setShowModalLogin}>Log In</button>
+          <a href="/register" rel="noopener noreferrer" className="btn s">Unirse</a>
+          <button className="btn i" id="btnShowModal" onClick={setShowModalLogin}>Iniciar Sesión</button>
         </div>
       }
     </nav>
