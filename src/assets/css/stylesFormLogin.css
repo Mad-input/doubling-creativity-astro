@@ -40,6 +40,7 @@ form {
   padding: 1.25rem;
   width: 100%;
   max-width: 500px;
+
   .title-form {
     color: #fff;
     font-size: 1.875rem;
@@ -95,6 +96,7 @@ form {
   .text-register {
     color: #fff;
     font-weight: bold;
+    text-align: center;
   }
 
   .btn-submit {
@@ -117,10 +119,17 @@ form {
 
   .options-btns {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
     .btn-register {
       width: 50%;
       align-self: flex-end;
+    }
+
+    a {
+      font-size: 12px;
+      color: #fff;
     }
   }
 

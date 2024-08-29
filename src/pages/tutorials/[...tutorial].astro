@@ -28,7 +28,11 @@ const { quiz } = entry.data;
     </div>
     <Content />
   </div>
-  <QuizComponent questions={quiz} client:load />
+  <QuizComponent
+    questions={quiz}
+    tutorialTitle={entry.data.title}
+    client:load
+  />
 </Layout>
 
 <style>

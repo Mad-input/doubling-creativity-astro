@@ -205,8 +205,8 @@ export default function FormRegister() {
         </label>
       </div>
       <div className="options-btns">
-        <a href="#">Ya Tengo una Cuenta</a>
-        <button type="submit" className="btn-submit btn-register" disabled={loading ? true : false} >Sign Up</button>
+        <a href="/">Ya Tengo una Cuenta</a>
+        <button type="submit" className="btn-submit btn-register" disabled={loading ? true : false} >Unirse</button>
       </div>
     </form>
   )
