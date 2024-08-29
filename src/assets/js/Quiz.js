@@ -1,5 +1,5 @@
 class Quiz {
-  constructor(data,options) {
+  constructor(data,options,user,dispatch) {
     this.data = data
     this.options = options
     // Crear mapas opciones
@@ -9,7 +9,8 @@ class Quiz {
     // Array para almacenar las preguntas respondidas
     this.questionsAnswered = [];
     this.scoreboard = JSON.parse(localStorage.getItem("scoreboard")) || [];
-    this.user = localStorage.getItem("user") || "unknown";
+    this.user = user
+    this.dispatch = dispatch
 
     // Limpiar el localStorage antes de jugar
     localStorage.removeItem("questionsAnswered");
@@ -193,15 +194,14 @@ class Quiz {
     const btnAgain = document.createElement("button");
     card.className = "card";
     card.innerHTML = /*html*/ `
-            <img src="/public/img/congrats.svg" alt="images of congrats" />
-            <p class="legend">Congrats! You completed the quiz.</p>
-            <p class="score">You answer ${this.score}/${this.data.length} correctly.</p>`;
-    btnAgain.innerText = "Play again";
+            <img src="${this.options.icons.congratulations}" alt="images of congrats" />
+            <p class="legend">Felicitaciones! Has completado el quiz.</p>
+            <p class="score">Has respondido ${this.score}/${this.data.length} correctamente.</p>`;
+    btnAgain.innerText = "Enviar mis respuestas";
     btnAgain.className = "btn-again";
     btnAgain.addEventListener("click", () => {
-      window.location.replace("/"); // Recargar la página para jugar de nuevo
+      this.dispatch()// ejecutar el dispatch
     });
-    this.showScoreboard(card);
     card.append(btnAgain);
     this.options.$quiz.innerHTML = "";
     this.options.$quiz.append(card);

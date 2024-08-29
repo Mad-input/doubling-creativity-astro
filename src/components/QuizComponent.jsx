@@ -1,10 +1,33 @@
 import userStore from '../store/userStore.js'
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import TutorialQuiz from "../assets/js/Quiz.js";
 import '../assets/css/quizStyles.css'
+import { createDetail } from "../api/auth.js";
 
-export default function QuizComponent({ questions }) {
-  const { isAuthenticated } = userStore()
+export default function QuizComponent({ questions, tutorialTitle }) {
+  const { isAuthenticated, user, quizzes, setQuizzes } = userStore()
+  const [lodadin, setLodadin] = useState(false)
+  const [completed, setCompleted] = useState(false)
+
+  const gameover = async () => {
+    try {
+      setLodadin(true)
+      await createDetail({
+        user: user.id,
+        tutorialTitle,
+        points: JSON.parse(localStorage.getItem("scoreboard")).at(-1).currentScore,
+        maxPoints: questions.length
+      })
+      setLodadin(false)
+      setCompleted(true)
+      setQuizzes(tutorialTitle)
+    } catch (error) {
+      setLodadin(false)
+      throw new Error(error)
+    } finally {
+      setLodadin(false)
+    }
+  }
 
   useEffect(() => {
     const options = {
@@ -21,31 +44,44 @@ export default function QuizComponent({ questions }) {
       icons: {
         error: "/img/wrong.svg",
         check: "/img/check.svg",
+        congratulations: "/img/check-game-over-quiz.webp",
       },
     };
 
-    if (isAuthenticated) {
-      const QuizT = new TutorialQuiz(questions, options);
+    if (isAuthenticated && !completed) {
+      const QuizT = new TutorialQuiz(questions, options, user, gameover);
       QuizT.init();
     }
+
+
   }, [isAuthenticated])
+
+  useEffect(() => {
+    if (quizzes.includes(tutorialTitle)) {
+      setCompleted(true)
+    }
+  }, [quizzes])
+
   return (
 
     isAuthenticated
       ?
-      <div className="quiz">
-        <header>
-          <h2 className="quiz-title">Quiz</h2>
-          <ul className="indicators"></ul>
-        </header>
-        <div className="question-container">
-          <div className="loader-container">
-            <div className="loader"></div>
-            <span>Cargando...</span>
+      !completed
+        ? <div className="quiz">
+          <header>
+            <h2 className="quiz-title">Quiz</h2>
+            <ul className="indicators"></ul>
+          </header>
+          <div className="question-container">
+            <div className="loader-container">
+              <div className="loader"></div>
+              <span>Cargando...</span>
+            </div>
           </div>
+          <small className="progress"></small>
+          {lodadin && <span className='loader'></span>}
         </div>
-        <small className="progress"></small>
-      </div>
+        : <h1 className='title-completed'>Ya haz completado este quiz</h1>
       : <h1 className="noAuthenticated">Accede Para Ver Todo el Contenido</h1>
 
   )

@@ -8,12 +8,15 @@ const useAuthStore = create(persist((set) => ({
     isAuthenticated: false,
     error: '',
     showModalLogin: false,
+    quizzes: [],
+
+    setQuizzes: (quiz) => set((state) => ({ quizzes: [...state.quizzes, quiz] })),
 
     setError: (value)=> set({error: value}),
 
     setShowModalLogin: ()=> set((state)=> ({showModalLogin: !state.showModalLogin})),
 
-    setUser: (user) => set({ user }), // Actualización correcta del estado
+    setUser: (user) => set({ user }),
 
     signUp: async ({ username, email, password, userImage }) => {
       try {
