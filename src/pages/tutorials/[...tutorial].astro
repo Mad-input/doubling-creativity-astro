@@ -18,6 +18,37 @@ const { quiz } = entry.data;
 ---
 
 <Layout title={entry.data.title}>
+  <a href="/tutorials" class="btn-back" aria-label="Back to Home">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+        d="M9 11l-4 4l4 4m-4 -4h11a4 4 0 0 0 0 -8h-1"></path></svg
+    >
+  </a>
+
+  <button class="btn-top">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="#fff"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+        d="M6 9l6 6l6 -6"></path></svg
+    >
+  </button>
   <div class="tutorial-content">
     <div class="image-container">
       <img
@@ -114,4 +145,66 @@ const { quiz } = entry.data;
       align-self: center;
     }
   }
+
+  .btn-back {
+    position: absolute;
+    top: 65px;
+    z-index: 2000;
+    background: #281b39;
+    border: none;
+    border-radius: 100%;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+
+    svg {
+      width: 30px;
+      height: 30px;
+      vertical-align: top;
+    }
+
+    &:hover {
+      opacity: 0.8;
+      scale: 1.1;
+    }
+  }
+
+  .btn-top {
+    position: fixed;
+    bottom: 65px;
+    right: 6.25rem;
+    z-index: 2000;
+    background: #281b39;
+    border: none;
+    border-radius: 100%;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+
+    @media screen and (width < 1100px) {
+      right: 10px;
+    }
+
+    svg {
+      width: 30px;
+      height: 30px;
+      vertical-align: top;
+      rotate: 180deg;
+    }
+
+    &:hover {
+      opacity: 0.8;
+      scale: 1.1;
+    }
+  }
 </style>
+
+<script>
+  const btnTop = document.querySelector(".btn-top") as HTMLElement;
+  btnTop?.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+</script>
