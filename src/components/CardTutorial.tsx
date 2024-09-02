@@ -16,13 +16,13 @@ export default function CardTutorial({ title, description, image, link, category
       <div className="content">
         <h2 className="card-title">{title}</h2>
         <p className="card-description">{description}</p>
-        <p className="category"><span>Category</span>: <strong>{category}</strong></p>
+        <p className="category"><span>Categoría</span>: <strong>{category}</strong></p>
         <p className="tags">
           {tags.map((tag, i) => (
             <span className="tag" key={i}>{tag}</span>
           ))}
         </p>
-        <a href={link}>I want to learn!</a>
+        <a href={link}>Quiero aprender!</a>
       </div>
     </article>
   )
