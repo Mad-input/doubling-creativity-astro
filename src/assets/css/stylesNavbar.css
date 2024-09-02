@@ -37,6 +37,13 @@
       width: 100%;
       text-align: center;
       padding-block: 10px;
+      &.plus {
+        text-shadow: 5px 5px 30px #ffd700;
+        pointer-events: none;
+        a {
+          color: #ffd700;
+        }
+      }
       a {
         color: #fff;
         text-decoration: none;

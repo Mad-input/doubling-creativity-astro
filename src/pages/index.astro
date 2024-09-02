@@ -3,20 +3,24 @@ import Layout from "../layouts/Layout.astro";
 import BentoGrid from "../sections/BentoGrid.astro";
 import Hero from "../sections/Hero.astro";
 import Quote from "../sections/Quote.astro";
-import RecentArticles from "../sections/RecentArticles.astro";
+import SectionPlus from "../sections/SectionPlus.astro";
 ---
 
 <Layout title="Doubing Creativity">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"
+  />
   <Hero />
   <h2 class="title-main">Tutoriales Populares</h2>
   <BentoGrid />
-  <h2 class="title-main">Articulos Recientes</h2>
-  <RecentArticles />
+  <SectionPlus />
   <Quote
     text="Creo profundamente en la desobediencia civil, y creo que leer, crear, hacer peliculas y pintar, es una forma de desobediencia, es una forma de ir contra el establecimiento que fomenta otras cosas completamente distintas. En el Arte, lo que prima es el Ocio, no la productividad, el ocio no es rentable, pero a largo plazo sí lo es, porque en él se crean las mejores ideas."
     author="Mario Mendoza"
     image="/img/authors/Mario_Mendoza.webp"
   />
+  <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
 </Layout>
 
 <style>

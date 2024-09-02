@@ -1,6 +1,7 @@
 ---
 import Navbar from "../components/Navbar.astro";
 import "@fontsource/poppins";
+import "@fontsource/calistoga";
 import NavbarMobile from "../components/NavbarMobile.jsx";
 import FormLogin from "../components/FormLogin";
 import Footer from "../components/Footer.astro";
@@ -18,9 +19,70 @@ const { title } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="description" content="Doubling Creativity" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/img/favicon.ico" />
-    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href="/img/logo-icon.svg" />
     <title>{title}</title>
+    <!-- Meta Description -->
+    <meta
+      name="description"
+      content="Bienvenido a nuestra página de arte, un espacio donde la creatividad no tiene límites y el arte cobra vida. Aquí encontrarás una galería vibrante de obras, tutoriales inspiradores, y recursos que te invitan a explorar tu lado más artístico. Ya seas un artista experimentado o un principiante lleno de curiosidad, nuestra plataforma está diseñada para nutrir tu pasión y ayudarte a crecer."
+    />
+
+    <!-- Meta Keywords (Opcional) -->
+    <meta
+      name="keywords"
+      content="arte tutoriales de artepinturaesculturailustracióncreatividadtécnicas artísticasdibujoarte digitalinspiración artísticarecursos para artistasgalería de artecursos de arte en líneacomunidad de artistasaprendizaje de arteobras de artearte contemporáneodiseño artísticoexposición de arteformación artística"
+    />
+
+    <!-- Meta Robots -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://doublingcreativity.netlify.app/" />
+
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="Doubling Creativity" />
+    <meta
+      property="og:description"
+      content="Bienvenido a nuestra página de arte, un espacio donde la creatividad no tiene límites y el arte cobra vida. Aquí encontrarás una galería vibrante de obras, tutoriales inspiradores, y recursos que te invitan a explorar tu lado más artístico. Ya seas un artista experimentado o un principiante lleno de curiosidad, nuestra plataforma está diseñada para nutrir tu pasión y ayudarte a crecer."
+    />
+    <meta
+      property="og:image"
+      content="https://doublingcreativity.netlify.app/public/img/logo.svg"
+    />
+    <meta property="og:url" content="https://doublingcreativity.netlify.app/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Doubling Creativity" />
+    <meta
+      name="twitter:description"
+      content="Bienvenido a nuestra página de arte, un espacio donde la creatividad no tiene límites y el arte cobra vida. Aquí encontrarás una galería vibrante de obras, tutoriales inspiradores, y recursos que te invitan a explorar tu lado más artístico. Ya seas un artista experimentado o un principiante lleno de curiosidad, nuestra plataforma está diseñada para nutrir tu pasión y ayudarte a crecer."
+    />
+
+    <!-- Language -->
+    <meta http-equiv="Content-Language" content="es" />
+
+    <!-- hreflang para contenido multilingüe -->
+    <link
+      rel="alternate"
+      href="https://doublingcreativity.netlify.app/"
+      hreflang="es"
+    />
+
+    <!-- Etiquetas Schema.org -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Tu Empresa",
+        "url": "https://www.tusitio.com",
+        "logo": "https://www.tusitio.com/logo.jpg"
+      }
+    </script>
+
+    <!-- Derechos de Autor (Opcional) -->
+    <meta name="copyright" content="© 2024 Doubling Creativity" />
   </head>
   <body>
     <Navbar />

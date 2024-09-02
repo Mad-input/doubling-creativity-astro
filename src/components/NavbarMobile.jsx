@@ -44,7 +44,7 @@ export default function NavbarMobile() {
         <li className="list-item"><a href="/">Inicio</a></li>
         <li className="list-item"><a href="/tutorials">Tutoriales</a></li>
         <li className="list-item"><a href="/about">Sobre Nosotros</a></li>
-        <li className="list-item"><a href="/articles">Articulos</a></li>
+        <li className="list-item plus"><a href="/plus">Doubing Plus</a></li>
       </ul>
       {
         !isAuthenticated &&

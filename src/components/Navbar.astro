@@ -12,7 +12,7 @@ import UserStatus from "./UserStatus.jsx";
       <a href="/"> <Logo /></a>
     </li>
     <li class="list-item"><a href="/about">Sobre Nosotros</a></li>
-    <li class="list-item"><a href="/articles">Articulos</a></li>
+    <li class="list-item plus"><a href="/plus">Doubing Plus</a></li>
   </ul>
   <UserStatus client:load />
   <button class="btn-bars">
@@ -23,16 +23,17 @@ import UserStatus from "./UserStatus.jsx";
 <style>
   .navbar {
     display: flex;
-    padding: 0.625rem 1.875rem;
+    justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
+    padding: 0.625rem 1.875rem;
     animation: blur 1s ease-in-out;
     animation-timeline: scroll(root);
     z-index: 1000;
 
     .list-navbar {
-      flex: 1;
+      flex-grow: 1;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -40,6 +41,14 @@ import UserStatus from "./UserStatus.jsx";
       .list-item {
         list-style: none;
         position: relative;
+
+        &.plus {
+          text-shadow: 5px 5px 30px #ffd700;
+          pointer-events: none;
+          a {
+            color: #ffd700;
+          }
+        }
         &:not(:has(svg))::after {
           content: "";
           display: inline-block;
@@ -69,6 +78,10 @@ import UserStatus from "./UserStatus.jsx";
     }
 
     .buttons-s-i {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
       .btn {
         border: none;
         background: none;
@@ -120,7 +133,7 @@ import UserStatus from "./UserStatus.jsx";
     }
   }
 
-  @media screen and (max-width: 1100px) {
+  @media screen and (width <= 1100px) {
     .navbar {
       .buttons-s-i {
         display: none;
