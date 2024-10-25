@@ -21,6 +21,7 @@ export default function NavbarMobile() {
   const handleNavbar = (e) => {
     e.target.parentElement.classList.remove("show")
   }
+  // <li className="list-item"><a href="/about">Sobre Nosotros</a></li>
 
   return (
 
@@ -43,7 +44,6 @@ export default function NavbarMobile() {
       <ul className="list-navbar">
         <li className="list-item"><a href="/">Inicio</a></li>
         <li className="list-item"><a href="/tutorials">Tutoriales</a></li>
-        <li className="list-item"><a href="/about">Sobre Nosotros</a></li>
         <li className="list-item plus"><a href="/plus">Doubing Plus</a></li>
       </ul>
       {
