@@ -2,7 +2,7 @@
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import "@fontsource/varela-round";
-import QuizComponent from "../../components/QuizComponent";
+import QuizComponent from "@components/QuizComponent";
 // 1. Genera una nueva ruta para cada entrada de colección
 export async function getStaticPaths() {
   const tutorialsEntries = await getCollection("tutorials");

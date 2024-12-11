@@ -1,10 +1,10 @@
 ---
+import "@fontsource/varela-round";
+import ListOfTutorials from "@components/ListOfTutorials.jsx";
+import Banner from "@sections/Banner.astro";
+import Quote from "@sections/Quote.astro";
 import Layout from "../../layouts/Layout.astro";
 import { getCollection } from "astro:content";
-import Banner from "../../sections/Banner.astro";
-import "@fontsource/varela-round";
-import ListOfTutorials from "../../components/ListOfTutorials.jsx";
-import Quote from "../../sections/Quote.astro";
 const tutorials = await getCollection("tutorials");
 ---
 

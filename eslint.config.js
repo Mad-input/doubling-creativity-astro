@@ -1,13 +1,13 @@
 export default [
   {
-    extends: "standard",
+    extends: 'standard',
     env: {
-      "browser": true,
-      "node": true
+      browser: true,
+      node: true
     },
     rules: {
-      semi: [2, "never"],
-      quotes: [2, "single"]
+      semi: [2, 'never'],
+      quotes: [2, 'single']
     }
-  },
-];
+  }
+]
